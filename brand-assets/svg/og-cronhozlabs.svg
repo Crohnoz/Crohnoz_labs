@@ -1,0 +1,33 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="r1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 160) rotate(45) scale(520 360)">
+      <stop stop-color="#10B981" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(970 120) rotate(130) scale(540 400)">
+      <stop stop-color="#38BDF6" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#38BDF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cursor" x1="171" y1="317" x2="268" y2="317" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981"/>
+      <stop offset="1" stop-color="#38BDF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0B0F14"/>
+  <rect width="1200" height="630" fill="url(#r1)"/>
+  <rect width="1200" height="630" fill="url(#r2)"/>
+  <path d="M0 515C189 467 328 534 506 492C683 450 808 363 1200 418V630H0V515Z" fill="#111827" fill-opacity="0.46"/>
+  <g opacity="0.22">
+    <path d="M0 120H1200M0 240H1200M0 360H1200M0 480H1200M200 0V630M400 0V630M600 0V630M800 0V630M1000 0V630" stroke="#F2F4F7" stroke-opacity="0.14"/>
+  </g>
+  <g>
+    <path d="M235 210H150C130.67 210 115 225.67 115 245V289C115 308.33 130.67 324 150 324H235" stroke="#F2F4F7" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M190 324H276" stroke="url(#cursor)" stroke-width="26" stroke-linecap="round"/>
+  </g>
+  <text x="336" y="270" fill="#F2F4F7" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="16">CRONHOZ</text>
+  <text x="340" y="348" fill="#10B981" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="43" font-weight="600" letter-spacing="24">LABS</text>
+  <rect x="1010" y="250" width="46" height="13" rx="6.5" fill="#10B981"/>
+  <text x="116" y="434" fill="#F2F4F7" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" letter-spacing="1">Sistemas que hacen funcionar tu negocio.</text>
+  <text x="116" y="492" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500">Automatización · Infraestructura · Software práctico · Soporte real</text>
+  <text x="116" y="560" fill="#10B981" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="700">&gt; cronhozlabs.cl</text>
+</svg>

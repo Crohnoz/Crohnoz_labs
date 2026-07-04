@@ -1,0 +1,24 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="12" y1="8" x2="118" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="0.55" stop-color="#0B0F14"/>
+      <stop offset="1" stop-color="#03140F"/>
+    </linearGradient>
+    <linearGradient id="cursor" x1="66" y1="89" x2="104" y2="89" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981"/>
+      <stop offset="1" stop-color="#38BDF6"/>
+    </linearGradient>
+    <filter id="glow" x="-35" y="-35" width="198" height="198" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.06 0 0 0 0 0.73 0 0 0 0 0.51 0 0 0 0.45 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#bg)"/>
+  <rect x="8.5" y="8.5" width="111" height="111" rx="27.5" stroke="url(#cursor)" stroke-opacity="0.4"/>
+  <g filter="url(#glow)">
+    <path d="M82 36H48C40.268 36 34 42.268 34 50V78C34 85.732 40.268 92 48 92H82" stroke="#F2F4F7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70 92H100" stroke="url(#cursor)" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>

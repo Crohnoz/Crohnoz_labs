@@ -1,0 +1,27 @@
+<svg width="520" height="148" viewBox="0 0 520 148" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Cronhoz Labs</title>
+  <desc id="desc">Logo Cronhoz Labs con símbolo C guion bajo inspirado en terminal de comandos.</desc>
+  <defs>
+    <linearGradient id="cursor" x1="56" y1="96" x2="130" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10B981"/>
+      <stop offset="1" stop-color="#38BDF6"/>
+    </linearGradient>
+    <linearGradient id="word" x1="168" y1="42" x2="494" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.56" stop-color="#E8EEF7"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="softGlow" x="0" y="0" width="160" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.06 0 0 0 0 0.73 0 0 0 0 0.51 0 0 0 0.36 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+  </defs>
+  <g filter="url(#softGlow)">
+    <path d="M110 40H56C43.85 40 34 49.85 34 62V86C34 98.15 43.85 108 56 108H110" stroke="#F2F4F7" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M88 108H132" stroke="url(#cursor)" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <text x="168" y="65" fill="url(#word)" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="35" font-weight="700" letter-spacing="10">CRONHOZ</text>
+  <text x="170" y="108" fill="#10B981" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="15">LABS</text>
+  <rect x="480" y="54" width="24" height="7" rx="3.5" fill="#10B981"/>
+</svg>
