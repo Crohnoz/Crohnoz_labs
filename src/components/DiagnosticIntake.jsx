@@ -7,16 +7,16 @@ export default function DiagnosticIntake() {
     <section id="diagnostico" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
         <div>
-          <SectionHeader eyebrow="Diagnóstico inicial" title="Convertimos una conversación desordenada en un mapa de solución.">
+          <SectionHeader eyebrow="Diagnóstico inicial" title="Partimos conversando, no cotizando a ciegas.">
             <p>
-              El primer valor de Cronhoz Labs es escuchar bien. El cliente puede llegar con una idea incompleta, una molestia administrativa o un proceso que simplemente ya no da abasto.
+              No necesitas llegar con un documento perfecto. Puedes llegar con una molestia, una idea a medias o un proceso que ya no está dando abasto.
             </p>
           </SectionHeader>
 
           <div className="lab-panel mt-8 p-6">
-            <p className="font-black text-white">Resultado esperado del diagnóstico</p>
+            <p className="font-black text-white">Qué debería salir de esa conversación</p>
             <p className="mt-3 leading-7 text-slate-300">
-              Un mapa simple de problema, flujo actual, solución posible, versión mínima, riesgos, tecnología necesaria y próximos pasos.
+              Un mapa simple: problema, flujo actual, primera solución posible, riesgos, tecnología necesaria y próximos pasos.
             </p>
           </div>
         </div>
@@ -27,8 +27,8 @@ export default function DiagnosticIntake() {
               <ClipboardCheck size={24} />
             </div>
             <div>
-              <p className="text-xl font-black text-white">Qué revisamos</p>
-              <p className="text-sm text-slate-400">Checklist de conversación inicial</p>
+              <p className="text-xl font-black text-white">Qué miramos juntos</p>
+              <p className="text-sm text-slate-400">Puntos para aterrizar la idea</p>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ export default function DiagnosticIntake() {
             href="#contacto"
             className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-4 font-black text-ink transition hover:-translate-y-1 hover:bg-cyan-200"
           >
-            Preparar diagnóstico
+            Quiero revisar mi caso
             <Send size={18} />
           </a>
         </div>

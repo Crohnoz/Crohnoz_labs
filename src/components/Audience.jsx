@@ -5,9 +5,9 @@ import { audiences } from '../data/solutions.js';
 export default function Audience() {
   return (
     <section id="clientes" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-      <SectionHeader eyebrow="Para quiénes" title="Clientes que necesitan orden antes de seguir creciendo." align="center">
+      <SectionHeader eyebrow="Para quiénes" title="Para negocios que ya están funcionando, pero necesitan respirar mejor." align="center">
         <p>
-          La mejor oportunidad para Cronhoz Labs está donde ya existe una operación funcionando, pero las herramientas actuales no alcanzan para sostenerla.
+          Trabajamos mejor cuando existe un problema real: algo que se repite, se pierde, se cobra mal, se registra tarde o depende demasiado de una sola persona.
         </p>
       </SectionHeader>
 

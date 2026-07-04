@@ -16,6 +16,10 @@ export default function ProjectDemoPage({ slug }) {
     return <DemoIndex />;
   }
 
+  if (project.sampleState !== 'available') {
+    return <DemoUnavailableState project={project} />;
+  }
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-ink text-slate-100 selection:bg-cyan-300 selection:text-ink">
       <DemoBackground />
@@ -37,7 +41,7 @@ export default function ProjectDemoPage({ slug }) {
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
-                  href={getWhatsAppUrl(`Hola Cronhoz Labs, quiero conversar sobre una solución parecida a ${project.name}.`)}
+                  href={getWhatsAppUrl(`Hola Crohnoz Labs, quiero conversar sobre una solución parecida a ${project.name}.`)}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-300 px-7 py-4 font-black text-ink shadow-glow transition hover:-translate-y-1 hover:bg-cyan-200"
@@ -49,7 +53,7 @@ export default function ProjectDemoPage({ slug }) {
                   href="/"
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.05] px-7 py-4 font-bold text-white transition hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-cyan-300/10"
                 >
-                  Volver a Cronhoz Labs
+                  Volver a Crohnoz Labs
                   <ArrowRight size={18} />
                 </a>
               </div>
@@ -63,7 +67,7 @@ export default function ProjectDemoPage({ slug }) {
                 <div className="flex gap-3">
                   <LockKeyhole className="mt-1 shrink-0 text-amber-100" size={20} />
                   <div>
-                    <p className="font-black text-white">No es el sistema productivo</p>
+                    <p className="font-black text-white">Es una muestra, no el sistema real</p>
                     <p className="mt-2 text-sm leading-6 text-slate-300">{demoDisclaimer.title}</p>
                   </div>
                 </div>
@@ -87,10 +91,10 @@ export default function ProjectDemoPage({ slug }) {
         <section className="lab-panel p-6 md:p-8">
           <div className="grid gap-8 lg:grid-cols-[1fr_.9fr] lg:items-center">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.22em] text-cyan-200">Arquitectura comercial</p>
-              <h2 className="mt-3 text-3xl font-black text-white md:text-5xl">Una vitrina para vender la idea sin entregar el producto privado.</h2>
+              <p className="text-sm font-black uppercase tracking-[0.22em] text-cyan-200">Cómo usamos esta demo</p>
+              <h2 className="mt-3 text-3xl font-black text-white md:text-5xl">Una forma simple de entender la solución sin exponer nada sensible.</h2>
               <p className="mt-5 max-w-3xl leading-8 text-slate-300">
-                La muestra pública puede enseñar pantallas simuladas, flujo de trabajo, módulos, beneficios y alcance. El sistema real queda separado con autenticación, base de datos privada, permisos y datos controlados.
+                La demo puede mostrar pantallas, flujo de trabajo y beneficios con datos ficticios. El sistema real vive aparte, con acceso privado, permisos y base de datos protegida.
               </p>
             </div>
             <div className="grid gap-3">
@@ -106,8 +110,8 @@ export default function ProjectDemoPage({ slug }) {
 
         <section className="py-10">
           <div className="lab-panel p-6 text-center md:p-8">
-            <h2 className="text-3xl font-black text-white">¿Quieres una solución parecida?</h2>
-            <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-300">Agenda un diagnóstico y revisamos si tu operación necesita un MVP, una automatización o un sistema más completo.</p>
+            <h2 className="text-3xl font-black text-white">¿Tu negocio necesita algo parecido?</h2>
+            <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-300">Conversemos el problema y vemos si conviene partir con una automatización, un MVP o una solución más completa.</p>
             <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
               <a href={getWhatsAppUrl()} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-4 font-black text-ink transition hover:-translate-y-1 hover:bg-cyan-200">
                 <MessageCircle size={18} /> WhatsApp {contact.whatsappDisplay}
@@ -123,6 +127,45 @@ export default function ProjectDemoPage({ slug }) {
   );
 }
 
+function DemoUnavailableState({ project }) {
+  return (
+    <div className="min-h-screen overflow-x-hidden bg-ink text-slate-100 selection:bg-cyan-300 selection:text-ink">
+      <DemoBackground />
+      <main className="mx-auto max-w-7xl px-5 py-8 lg:px-8">
+        <DemoTopbar />
+        <section className="cta-panel mt-10 p-7 md:p-12">
+          <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">Muestra en preparación</p>
+          <h1 className="mt-4 text-5xl font-black tracking-[-0.055em] text-white md:text-7xl">{project.name}</h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">La ficha pública sigue disponible, pero la muestra pública aún no está lista.</p>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300">{project.sampleNote}</p>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            <div className="rounded-[1.5rem] border border-white/10 bg-black/20 p-5">
+              <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-200">Ficha pública</p>
+              <p className="mt-2 text-lg font-black text-white">Disponible</p>
+              <p className="mt-2 text-sm leading-6 text-slate-300">La propuesta, el alcance y el contexto pueden revisarse sin exponer el sistema real.</p>
+            </div>
+            <div className="rounded-[1.5rem] border border-white/10 bg-black/20 p-5">
+              <p className="text-sm font-black uppercase tracking-[0.2em] text-cyan-200">Sistema real</p>
+              <p className="mt-2 text-lg font-black text-white">Privado</p>
+              <p className="mt-2 text-sm leading-6 text-slate-300">Los accesos, permisos y bases de datos permanecen separados de la muestra pública.</p>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href={project.showcasePath} className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-4 font-black text-ink transition hover:-translate-y-1 hover:bg-cyan-200">
+              Ver ficha pública
+            </a>
+            <a href="/proyectos" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-6 py-4 font-bold text-white transition hover:border-cyan-300/35 hover:bg-cyan-300/10">
+              Volver al hub de proyectos
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
+
 function DemoIndex() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-ink text-slate-100 selection:bg-cyan-300 selection:text-ink">
@@ -131,16 +174,36 @@ function DemoIndex() {
         <DemoTopbar />
         <section className="cta-panel mt-10 p-7 md:p-12">
           <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">Muestras públicas</p>
-          <h1 className="mt-4 text-5xl font-black tracking-[-0.055em] text-white md:text-7xl">Rutas demo de Cronhoz Labs.</h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">Estas rutas están pensadas para presentar proyectos sin exponer datos reales ni sistemas productivos de clientes.</p>
+          <h1 className="mt-4 text-5xl font-black tracking-[-0.055em] text-white md:text-7xl">Muestras públicas de Crohnoz Labs.</h1>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">Las rutas de muestra se usan para explicar ideas con datos ficticios; cuando una demo aún no está lista, se marca como en preparación o interna.</p>
           <div className="mt-8 grid gap-4 lg:grid-cols-2">
-            {projects.map((project) => (
-              <a key={project.slug} href={project.demoPath} className="nav-card group p-5">
-                <p className="text-sm font-semibold text-slate-400">{project.category}</p>
-                <p className="mt-1 text-2xl font-black text-white">{project.name}</p>
-                <p className="mt-3 text-sm leading-6 text-slate-300">{project.demoLabel}</p>
-              </a>
-            ))}
+            {projects.map((project) => {
+              const isAvailable = project.sampleState === 'available';
+              const cardContent = (
+                <>
+                  <p className="text-sm font-semibold text-slate-400">{project.category}</p>
+                  <p className="mt-1 text-2xl font-black text-white">{project.name}</p>
+                  <p className="mt-3 text-sm leading-6 text-slate-300">{project.sampleNote}</p>
+                </>
+              );
+
+              if (isAvailable) {
+                return (
+                  <a key={project.slug} href={project.demoPath} className="nav-card group p-5">
+                    {cardContent}
+                  </a>
+                );
+              }
+
+              return (
+                <div key={project.slug} className="nav-card cursor-not-allowed p-5 opacity-90">
+                  {cardContent}
+                  <span className="mt-4 inline-flex rounded-full border border-slate-400/25 bg-slate-400/10 px-3 py-1 text-[0.68rem] font-black uppercase tracking-[0.16em] text-slate-200">
+                    {project.sampleState === 'internal' ? 'Vista interna' : 'En preparación'}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </section>
       </main>

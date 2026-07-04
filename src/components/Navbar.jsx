@@ -58,7 +58,7 @@ export default function Navbar() {
       <div className="absolute inset-x-0 bottom-0 h-px bg-mintlab/70 transition-[width] duration-200" style={{ width: `${progress}%` }} />
 
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8" aria-label="Principal">
-        <a href="/" className="group flex items-center gap-3" aria-label="Ir al inicio de Cronhoz Labs" onClick={closeMenus}>
+        <a href="/" className="group flex items-center gap-3" aria-label="Ir al inicio de Crohnoz Labs" onClick={closeMenus}>
           <BrandMark />
         </a>
 

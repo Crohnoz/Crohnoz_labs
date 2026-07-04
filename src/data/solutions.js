@@ -3,6 +3,7 @@ import {
   Bot,
   ClipboardList,
   DatabaseZap,
+  ArchiveRestore,
   FileCheck2,
   Gauge,
   HardDrive,
@@ -15,106 +16,112 @@ import {
 } from 'lucide-react';
 
 export const painPoints = [
-  'Cobros manuales y cuentas poco claras',
-  'Inventarios hechos en cuadernos o planillas eternas',
-  'Agendas desordenadas y pérdida de información',
-  'Procesos que dependen de WhatsApp, memoria o una sola persona',
-  'Equipos antiguos sin uso productivo',
-  'Falta de reportes para decidir con datos',
-  'Reclamos sin evidencia ni trazabilidad',
+  'Cuentas que se revisan más de una vez porque nadie está completamente seguro',
+  'Inventarios que viven entre cuadernos, Excel y memoria',
+  'Agendas que funcionan, pero a costa de estar encima todo el día',
+  'Pedidos, pagos o pacientes repartidos entre chats y fotos sueltas',
+  'Equipos antiguos guardados que todavía podrían servir',
+  'Decisiones tomadas sin reportes claros',
+  'Reclamos difíciles de resolver porque falta evidencia',
   'Negocios que crecieron más rápido que sus herramientas',
-  'Clientes, pacientes o pedidos sin historial confiable',
-  'Operaciones donde nadie sabe el estado real hasta que aparece el problema',
+  'Historiales incompletos de clientes, pacientes, pedidos o pagos',
+  'Operaciones donde el problema aparece antes que la alerta',
 ];
 
 export const solutions = [
   {
     icon: ClipboardList,
-    title: 'Sistemas administrativos',
+    title: 'Administración ordenada',
     description:
-      'Cobros, pagos, abonos, clientes, deudas, vouchers correlativos, reportes y control mensual para operaciones que necesitan orden.',
+      'Pagos, cobros, clientes, deuda, vouchers y reportes en un solo flujo, para que la información deje de depender de revisar todo a mano.',
   },
   {
     icon: Workflow,
-    title: 'Automatización de procesos',
+    title: 'Automatización útil',
     description:
-      'Flujos, formularios, alertas, bitácoras, tareas repetitivas y reportes automáticos para reducir fricción operativa.',
+      'Formularios, alertas, bitácoras y tareas repetitivas que se ejecutan con menos fricción y más consistencia.',
   },
   {
     icon: Gauge,
-    title: 'Sistemas operacionales',
+    title: 'Operación diaria',
     description:
-      'Comandas, estaciones de trabajo, inventario, producción, mermas, trazabilidad, paneles por área y estados en tiempo real.',
+      'Comandas, inventario, producción, estados por área y trazabilidad para saber qué está pasando sin perseguir la información.',
   },
   {
     icon: Stethoscope,
-    title: 'Soluciones clínicas y profesionales',
+    title: 'Gestión profesional',
     description:
-      'Agenda, pacientes, fichas, historial, servicios, seguimiento, fotografías y administración interna para centros de atención.',
+      'Agenda, fichas, historial, servicios y seguimiento para centros de atención que necesitan trabajar con más orden y confianza.',
   },
   {
     icon: HardDrive,
-    title: 'Reutilización tecnológica',
+    title: 'Tecnología reutilizada',
     description:
-      'Convertimos notebooks, PCs, tablets, redes locales y equipos disponibles en infraestructura útil y de bajo costo inicial.',
+      'Antes de comprar más, revisamos lo que ya existe: notebooks, PCs, tablets, redes o servidores que pueden volver a ser útiles.',
   },
   {
     icon: Network,
-    title: 'Infraestructura y soporte',
+    title: 'Soporte e infraestructura',
     description:
-      'Despliegues, monitoreo, respaldos, servidores locales, soporte remoto y continuidad básica para proyectos activos.',
+      'Despliegues, monitoreo, respaldos y soporte remoto para que el sistema no sea solo una entrega, sino una herramienta viva.',
+  },
+  {
+    icon: ArchiveRestore,
+    title: 'Bases y continuidad',
+    description:
+      'Bases de datos separadas, respaldos y recuperación pensada desde el inicio, para que el cliente no dependa de servicios temporales o cuentas dispersas.',
   },
 ];
 
 export const capabilities = [
-  { icon: DatabaseZap, label: 'Bases de datos y paneles administrativos' },
-  { icon: Bot, label: 'Automatizaciones internas y flujos de trabajo' },
-  { icon: Archive, label: 'Respaldos, registros y trazabilidad' },
-  { icon: ShieldCheck, label: 'Buenas prácticas de seguridad operativa' },
+  { icon: DatabaseZap, label: 'Datos ordenados y paneles simples de entender' },
+  { icon: Bot, label: 'Automatizaciones que reducen trabajo repetido' },
+  { icon: Archive, label: 'Historial, respaldo y trazabilidad' },
+  { icon: ShieldCheck, label: 'Separación entre demo pública y sistema real' },
 ];
 
 export const focusPillars = [
   {
     icon: FileCheck2,
-    title: 'Ordenar la información',
-    description: 'Estructuramos datos, clientes, pagos, pedidos, pacientes, inventario y documentos para que la operación deje de depender de la memoria.',
+    title: 'Ordenar primero',
+    description: 'Partimos por entender qué información importa, dónde se pierde y quién necesita verla.',
   },
   {
     icon: Bot,
-    title: 'Automatizar lo repetitivo',
-    description: 'Detectamos tareas que consumen tiempo y las llevamos a formularios, paneles, alertas, reportes o flujos simples de ejecutar.',
+    title: 'Automatizar con criterio',
+    description: 'No todo debe automatizarse. Elegimos lo que realmente ahorra tiempo o evita errores.',
   },
   {
     icon: Recycle,
     title: 'Aprovechar lo disponible',
-    description: 'Antes de exigir compras nuevas, evaluamos notebooks, PCs, tablets, impresoras, redes y servidores básicos que puedan volver a producir valor.',
+    description: 'Si un equipo antiguo puede convertirse en estación, servidor o pantalla, lo consideramos antes de comprar más.',
   },
   {
     icon: LineChart,
-    title: 'Medir para decidir',
-    description: 'Diseñamos reportes y tableros con información útil: deuda, producción, mermas, citas, ventas, estados, riesgos y próximos pasos.',
+    title: 'Medir lo importante',
+    description: 'El sistema debe ayudar a decidir: deuda, citas, ventas, mermas, producción, riesgos o próximos pasos.',
   },
 ];
 
 export const audiences = [
   {
     title: 'Emprendimientos y pymes',
-    description: 'Negocios que ya venden, pero sienten que la operación se volvió difícil de controlar con herramientas improvisadas.',
+    description: 'Negocios que ya se mueven, venden y atienden, pero sienten que el orden quedó atrás.',
     examples: ['Inventario', 'Cobros', 'Pedidos', 'Reportes'],
   },
   {
     title: 'Centros profesionales',
-    description: 'Consultas, centros de atención o servicios que necesitan agenda, fichas, historial y seguimiento más ordenado.',
+    description: 'Servicios que necesitan agenda, historial y seguimiento sin perder tiempo buscando datos.',
     examples: ['Agenda', 'Pacientes', 'Fichas', 'Servicios'],
   },
   {
     title: 'Operaciones gastronómicas',
-    description: 'Pastelerías, cocinas, cafeterías o negocios con producción, vitrina, comandas, mermas y control por área.',
+    description: 'Pastelerías, cocinas y cafeterías donde producción, comandas y mermas deben conversar entre sí.',
     examples: ['Comandas', 'Producción', 'Mermas', 'Recetas'],
   },
   {
     title: 'Administradores locales',
-    description: 'Personas o equipos que gestionan pagos, arriendos, deuda, documentos, liquidaciones y trazabilidad financiera.',
+    description: 'Personas que gestionan pagos, arriendos, documentos y cuentas que necesitan quedar claras.',
     examples: ['Arriendos', 'Vouchers', 'Deuda', 'Liquidaciones'],
   },
 ];
@@ -122,95 +129,160 @@ export const audiences = [
 export const processSteps = [
   {
     step: '01',
-    title: 'Diagnóstico del problema',
+    title: 'Escuchar el problema',
     description:
-      'Escuchamos cómo funciona hoy tu operación, qué duele, qué se repite, qué se pierde y qué decisión se está tomando sin datos claros.',
+      'Partimos conversando. Qué molesta, qué se repite, qué se pierde y qué parte de la operación ya no da abasto.',
   },
   {
     step: '02',
-    title: 'Mapa de proceso',
+    title: 'Dibujar el flujo',
     description:
-      'Transformamos el desorden en flujo: actores, tareas, datos, pantallas, permisos, riesgos, prioridades y primera versión viable.',
+      'Ordenamos el proceso en pasos simples: personas, datos, pantallas, permisos, prioridades y riesgos.',
   },
   {
     step: '03',
-    title: 'Prototipo funcional',
+    title: 'Construir lo esencial',
     description:
-      'Construimos una versión usable, enfocada en resolver el núcleo del problema sin inflar el sistema ni aumentar costos innecesarios.',
+      'Creamos una primera versión usable, enfocada en resolver el núcleo del problema sin inflar el proyecto.',
   },
   {
     step: '04',
-    title: 'Implementación real',
+    title: 'Probar con uso real',
     description:
-      'Instalamos, probamos, capacitamos y ajustamos con casos reales del negocio: usuarios reales, datos reales y operación real.',
+      'El sistema se ajusta con casos reales, porque la operación siempre enseña detalles que no aparecen en la teoría.',
   },
   {
     step: '05',
-    title: 'Mantención y evolución',
+    title: 'Mantener y mejorar',
     description:
-      'Monitoreamos, respaldamos, corregimos y agregamos funciones según crecimiento, aprendizaje operacional y nuevas necesidades.',
+      'Después de publicar, seguimos corrigiendo, respaldando y agregando mejoras según lo que el negocio necesita.',
   },
 ];
 
 export const serviceModels = [
   {
     name: 'Diagnóstico Digital',
-    tag: 'Entrada simple',
+    tag: 'Para partir bien',
     description:
-      'Revisión del problema, mapa de oportunidad y propuesta clara de solución. Ideal para negocios que no saben por dónde partir.',
-    deliverables: ['Reunión de diagnóstico', 'Mapa de proceso', 'Propuesta de solución', 'Priorización MVP'],
+      'Una conversación guiada para entender el problema, ordenar prioridades y decidir si vale la pena construir una solución.',
+    deliverables: ['Reunión inicial', 'Mapa del proceso', 'Propuesta clara', 'Prioridades del MVP'],
   },
   {
     name: 'Sistema MVP',
-    tag: 'Producto funcional',
+    tag: 'Primera versión usable',
     description:
-      'Primera versión operativa para resolver el problema principal: usuarios, datos, flujo central, panel base y despliegue usable.',
+      'Una versión pequeña pero funcional, pensada para probar el flujo principal y empezar a generar valor rápido.',
     deliverables: ['Diseño funcional', 'Desarrollo inicial', 'Pruebas reales', 'Deploy y capacitación'],
   },
   {
     name: 'Sistema Operacional',
-    tag: 'Mayor profundidad',
+    tag: 'Más estructura',
     description:
-      'Plataforma con módulos, roles, reportes, trazabilidad y soporte de procesos más complejos para operaciones que ya requieren estructura.',
+      'Para operaciones que ya necesitan roles, módulos, reportes y control por áreas.',
     deliverables: ['Módulos por área', 'Reportes', 'Permisos', 'Soporte y mejoras'],
   },
   {
-    name: 'Mantención Cronhoz',
+    name: 'Mantención Crohnoz',
+    tag: 'Acompañamiento',
+    description:
+      'Soporte mensual para que el sistema siga funcionando, se respalde y evolucione con el negocio.',
+    deliverables: ['Soporte remoto', 'Backups', 'Monitoreo', 'Mejoras progresivas'],
+  },
+  {
+    name: 'Infraestructura administrada',
     tag: 'Continuidad',
     description:
-      'Acompañamiento mensual para sistemas activos: respaldo, soporte, monitoreo, correcciones, nuevas funciones y evolución controlada.',
-    deliverables: ['Soporte remoto', 'Backups', 'Monitoreo', 'Mejoras progresivas'],
+      'Alojamiento, base de datos, respaldos y monitoreo para proyectos que ya no pueden depender de servicios gratuitos o temporales.',
+    deliverables: ['Base por cliente', 'Variables protegidas', 'Backup programado', 'Ruta de recuperación'],
   },
 ];
 
 export const diagnosticChecklist = [
-  'Qué proceso genera más pérdida de tiempo',
-  'Dónde se pierde información o evidencia',
-  'Qué datos se repiten en Excel, WhatsApp o cuadernos',
-  'Qué usuarios participan y qué permisos necesitan',
-  'Qué equipo o tecnología disponible puede reutilizarse',
-  'Qué versión mínima entregaría valor en menos tiempo',
+  'Qué parte del trabajo te quita más tiempo',
+  'Dónde se pierde información, evidencia o historial',
+  'Qué se repite entre Excel, WhatsApp, cuadernos o fotos',
+  'Quiénes usan el proceso y qué permisos necesitarían',
+  'Qué equipos disponibles podrían aprovecharse',
+  'Qué primera versión daría valor sin hacerlo enorme',
 ];
 
 export const faqItems = [
   {
-    question: '¿Cronhoz Labs hace solo páginas web?',
+    question: '¿Crohnoz Labs hace páginas web?',
     answer:
-      'No. Una landing puede ser parte de la solución, pero el foco principal son sistemas administrativos, automatización, operación, trazabilidad, infraestructura práctica y herramientas internas.',
+      'Sí, cuando sirven a un objetivo. Pero el foco no es hacer una página bonita y nada más: buscamos resolver procesos, ordenar información y crear herramientas útiles para la operación.',
   },
   {
-    question: '¿Necesito comprar equipos nuevos para empezar?',
+    question: '¿Tengo que comprar equipos nuevos?',
     answer:
-      'No necesariamente. Primero se evalúa lo que ya existe: notebooks, computadores, tablets, red local o servidores básicos. Si algo se puede reutilizar de forma segura y útil, se considera en la solución.',
+      'No necesariamente. Primero revisamos lo que ya tienes. A veces un notebook antiguo, una tablet o un PC disponible pueden transformarse en una estación, pantalla o servidor local.',
   },
   {
-    question: '¿Puedo partir con algo pequeño?',
+    question: '¿Podemos empezar con algo pequeño?',
     answer:
-      'Sí. El enfoque recomendado es partir con un MVP funcional: una primera versión que resuelve el problema central y luego crece según uso real.',
+      'Sí. De hecho, suele ser lo más sano. Partimos con una primera versión que resuelva lo más urgente y después crecemos con aprendizaje real.',
   },
   {
-    question: '¿Trabajan con sistemas locales o en la nube?',
+    question: '¿El sistema puede ser local, web o mixto?',
     answer:
-      'Depende del caso. Algunas soluciones pueden vivir en la nube, otras en red local y otras en un modelo híbrido. La decisión se toma según presupuesto, conectividad, continuidad y operación real.',
+      'Sí. La decisión depende del negocio: conectividad, presupuesto, continuidad, seguridad y forma de trabajo. No hay una sola respuesta correcta para todos.',
   },
+  {
+    question: '¿Crohnoz Labs puede administrar la base de datos?',
+    answer:
+      'Sí. Para producción, la idea es que cada cliente tenga una base separada, respaldos y una configuración documentada. Las demos pueden ser simples; los sistemas reales necesitan continuidad.',
+  },
+];
+
+
+export const productionPolicy = [
+  {
+    icon: 'Database',
+    title: 'Base separada',
+    description: 'Cada cliente debe tener una base propia o una separación clara por entorno. La demo nunca toca datos reales.',
+  },
+  {
+    icon: 'ArchiveRestore',
+    title: 'Respaldo definido',
+    description: 'El proyecto debe tener una forma concreta de recuperar información si una base falla, vence o se corrompe.',
+  },
+  {
+    icon: 'LockKeyhole',
+    title: 'Credenciales privadas',
+    description: 'Variables de entorno, claves y accesos quedan fuera de GitHub y se documentan solo donde corresponde.',
+  },
+  {
+    icon: 'Cloud',
+    title: 'Producción estable',
+    description: 'Los servicios gratuitos sirven para probar. Los clientes productivos necesitan infraestructura estable y cobrada como parte del servicio.',
+  },
+];
+
+export const infrastructurePlans = [
+  {
+    name: 'Demo segura',
+    tag: 'Presentación',
+    description: 'Para vender la idea sin exponer información sensible. Puede usar datos ficticios y rutas públicas.',
+    includes: ['Datos simulados', 'Sin credenciales reales', 'Muestra comercial', 'Sin dependencia crítica'],
+  },
+  {
+    name: 'Base administrada',
+    tag: 'Cliente activo',
+    description: 'Para sistemas que ya se usan en operación diaria y necesitan continuidad básica.',
+    includes: ['Base separada', 'Backup programado', 'Monitoreo básico', 'Soporte remoto'],
+  },
+  {
+    name: 'Continuidad operativa',
+    tag: 'Sistema crítico',
+    description: 'Para clientes que dependen del sistema para atender, cobrar, producir o coordinar trabajo real.',
+    includes: ['Ambiente privado', 'Plan de recuperación', 'Revisión periódica', 'Mejoras evolutivas'],
+  },
+];
+
+export const continuityPrinciples = [
+  'no usar bases gratuitas que expiran para producción',
+  'mantener demo pública separada del sistema real',
+  'guardar backups antes de tocar datos de clientes',
+  'documentar deploy, variables y recuperación mínima',
+  'cobrar infraestructura y mantención como parte del servicio',
 ];

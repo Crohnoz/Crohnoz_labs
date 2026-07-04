@@ -28,7 +28,7 @@ export default function FloatingActions() {
         className="inline-flex items-center gap-2 rounded-full bg-cyan-300 px-5 py-3 text-sm font-black text-ink shadow-glow transition hover:-translate-y-1 hover:bg-cyan-200"
       >
         <MessageCircle size={19} />
-        <span className="hidden sm:inline">Hablar con Cronhoz</span>
+        <span className="hidden sm:inline">Hablar con Crohnoz</span>
         <span className="sm:hidden">WhatsApp</span>
       </a>
     </div>

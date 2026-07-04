@@ -8,15 +8,15 @@ export default function QuickNavigation() {
         <div className="flex flex-col gap-3 border-b border-white/10 pb-4 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">Lectura rápida</p>
-            <p className="mt-1 text-sm text-slate-400">La portada queda compacta. Branding, proyectos y demos viven en rutas de exploración.</p>
+            <p className="mt-1 text-sm text-slate-400">La portada muestra lo esencial. Si quieres mirar más a fondo, cada tema tiene su propio espacio.</p>
           </div>
           <a href="/proyectos" className="inline-flex items-center gap-2 text-sm font-black text-cyan-100 transition hover:text-cyan-200">
-            Abrir hub de proyectos
+            Explorar proyectos
             <ArrowRight size={16} />
           </a>
         </div>
 
-        <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
           {quickNavigationItems.map((item) => {
             const Icon = item.icon;
             return (

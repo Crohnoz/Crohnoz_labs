@@ -9,9 +9,9 @@ export default function DemoRoutes() {
     <section id="muestras" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
         <div className="lg:sticky lg:top-28">
-          <SectionHeader eyebrow="Rutas públicas" title="Muestras comerciales sin exponer sistemas reales.">
+          <SectionHeader eyebrow="Muestras públicas" title="Mostrar sin exponer lo privado.">
             <p>
-              Cada proyecto tiene una ficha, una demo segura y una ruta futura reservada para que el cliente explore sin entrar al producto privado.
+              Cada proyecto puede tener una ficha y una demo con datos ficticios. Así el cliente entiende la idea sin entrar al sistema real.
             </p>
           </SectionHeader>
 
@@ -22,7 +22,7 @@ export default function DemoRoutes() {
               </div>
               <div>
                 <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-100">{demoDisclaimer.label}</p>
-                <p className="font-black text-white">Separación segura</p>
+                <p className="font-black text-white">Separado por diseño</p>
               </div>
             </div>
             <p className="leading-7 text-slate-300">{demoDisclaimer.description}</p>
@@ -51,7 +51,7 @@ export default function DemoRoutes() {
 
           <div className="lab-panel p-5 text-sm leading-7 text-slate-400">
             <ExternalLink className="mb-3 text-cyan-200" size={20} />
-            Las rutas futuras quedan reservadas como subdominios o rutas internas, pero siempre separadas de los sistemas productivos.
+            Las rutas futuras quedan preparadas, pero el acceso productivo siempre se maneja por separado.
           </div>
         </div>
       </div>

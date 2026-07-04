@@ -1,10 +1,10 @@
-# Cronhoz Labs Website
+# Crohnoz Labs Website
 
-Landing comercial para **Cronhoz Labs** (`cronhozlabs.cl`): laboratorio de soluciones digitales, sistemas administrativos, automatización, infraestructura práctica, reutilización tecnológica y muestras públicas de proyectos.
+Landing comercial para **Crohnoz Labs** (`crohnozlabs.cl`): laboratorio de soluciones digitales, sistemas administrativos, automatización, infraestructura práctica, reutilización tecnológica y muestras públicas de proyectos.
 
 ## Objetivo
 
-Presentar Cronhoz Labs como una carta de presentación profesional para captar clientes que necesitan resolver problemas administrativos, operativos o tecnológicos mediante sistemas funcionales.
+Presentar Crohnoz Labs como una carta de presentación profesional para captar clientes que necesitan resolver problemas administrativos, operativos o tecnológicos mediante sistemas funcionales.
 
 Claim principal:
 
@@ -47,7 +47,7 @@ Configuración esperada:
 Dominio principal usado en el proyecto:
 
 ```txt
-cronhozlabs.cl
+crohnozlabs.cl
 ```
 
 También se dejó documentado `cronoslab.cl` como alias mencionado en conversación. La configuración visible del dominio está centralizada en:
@@ -165,8 +165,8 @@ src/data/solutions.js
 
 ## Pendientes recomendados
 
-1. Confirmar dominio final definitivo: `cronhozlabs.cl` o `cronoslab.cl`.
-2. Confirmar correo real o redirección para `contacto@cronhozlabs.cl`.
+1. Confirmar dominio final definitivo: `crohnozlabs.cl` o `cronoslab.cl`.
+2. Confirmar correo real o redirección para `contacto@crohnozlabs.cl`.
 3. Agregar capturas simuladas o mockups para cada muestra pública.
 4. Crear demos visuales más completas por proyecto sin usar datos reales.
 5. Agregar Google Search Console cuando el dominio esté propagado.
@@ -206,9 +206,17 @@ Archivos principales de marca:
 
 ```txt
 public/favicon.svg
-public/logo-cronhozlabs.svg
-public/og-cronhozlabs.svg
+public/logo-crohnozlabs.svg
+public/og-crohnozlabs.svg
 src/components/BrandMark.jsx
 src/data/brand.js
 src/styles/index.css
 ```
+
+## V10.2 — Continuidad e infraestructura administrada
+
+La web incorpora una nueva línea de servicio: **Infraestructura administrada Crohnoz**.
+
+Esto cubre bases de datos por cliente, respaldos, separación entre demo pública y sistema real, credenciales privadas, monitoreo y ruta mínima de recuperación.
+
+El caso FDR queda marcado como recuperación técnica: la plataforma carga, pero la base de datos debe reconstruirse con una demo segura antes de volver a mostrar un deploy público.

@@ -9,6 +9,7 @@ import ProjectsHub from './components/ProjectsHub.jsx';
 import ProjectDemoPage from './components/ProjectDemoPage.jsx';
 import ExplorePage from './components/ExplorePage.jsx';
 import Method from './components/Method.jsx';
+import ManagedInfrastructure from './components/ManagedInfrastructure.jsx';
 import FinalCTA from './components/FinalCTA.jsx';
 import FloatingActions from './components/FloatingActions.jsx';
 import Footer from './components/Footer.jsx';
@@ -54,6 +55,7 @@ export default function App() {
         <Solutions />
         <Projects />
         <Method />
+        <ManagedInfrastructure />
         <FinalCTA />
       </main>
       <Footer />

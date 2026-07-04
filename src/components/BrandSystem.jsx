@@ -10,10 +10,10 @@ export default function BrandSystem() {
           <p>{brandPromise.description}</p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <a href="/marca" className="button-primary button-compact">
-              Ver branding
+              Ver identidad
             </a>
             <a href="/proyectos" className="inline-flex items-center gap-2 text-sm font-black text-emerald-100 transition hover:text-emerald-200">
-              Explorar proyectos <ArrowRight size={16} />
+              Ver proyectos <ArrowRight size={16} />
             </a>
           </div>
         </SectionHeader>
@@ -25,8 +25,8 @@ export default function BrandSystem() {
                 <Layers3 size={21} />
               </div>
               <div>
-                <p className="text-sm font-black uppercase tracking-[0.22em] text-emerald-200">Arquitectura de marca</p>
-                <h2 className="mt-1 text-2xl font-black text-white">Familias claras, links claros, sistemas separados.</h2>
+                <p className="text-sm font-black uppercase tracking-[0.22em] text-emerald-200">Líneas de trabajo</p>
+                <h2 className="mt-1 text-2xl font-black text-white">Cada línea de trabajo tiene su lugar.</h2>
               </div>
             </div>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">

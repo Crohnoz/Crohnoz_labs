@@ -1,7 +1,13 @@
-import { ArrowLeft, CheckCircle2, ExternalLink, Layers3, LockKeyhole, MessageCircle, ShieldCheck } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, ExternalLink, Github, Layers3, LockKeyhole, MessageCircle, Rocket, ShieldCheck } from 'lucide-react';
 import { contact, getWhatsAppUrl } from '../data/contact.js';
-import { getProjectBySlug, projects } from '../data/projects.js';
+import { ecosystemSummary, getProjectBySlug, projects } from '../data/projects.js';
 import { demoDisclaimer } from '../data/site.js';
+
+function getSampleBadge(project) {
+  if (project.sampleState === 'internal') return { label: 'Vista interna', classes: 'border-amber-300/25 bg-amber-300/10 text-amber-100' };
+  if (project.sampleState === 'available') return { label: 'Muestra pública disponible', classes: 'border-emerald-300/25 bg-emerald-300/10 text-emerald-100' };
+  return { label: 'Muestra en preparación', classes: 'border-slate-400/25 bg-slate-400/10 text-slate-200' };
+}
 import BrandMark from './BrandMark.jsx';
 import FloatingActions from './FloatingActions.jsx';
 import Footer from './Footer.jsx';
@@ -36,10 +42,10 @@ function ProjectsIndex() {
                 <Layers3 size={16} /> Hub de proyectos
               </div>
               <h1 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-[-0.055em] text-white md:text-7xl">
-                Vitrina técnica con <span className="text-gradient">rutas públicas y demos seguras.</span>
+                Vitrina técnica con <span className="text-gradient">repos, demos y rutas seguras.</span>
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-                Cada proyecto tiene una ficha comercial, una muestra segura y una ruta futura reservada. La idea es que el cliente explore sin entrar a sistemas productivos ni datos reales.
+                Cada proyecto tiene una ficha pública. Las muestras se marcan según estén listas, en preparación o reservadas para uso interno.
               </p>
             </div>
             <div className="lab-panel p-6">
@@ -48,6 +54,20 @@ function ProjectsIndex() {
               <p className="mt-4 leading-7 text-slate-300">{demoDisclaimer.description}</p>
             </div>
           </div>
+        </section>
+
+
+
+        <section className="grid gap-4 py-8 md:grid-cols-3">
+          {ecosystemSummary.map((item) => (
+            <a key={item.label} href={item.href} target="_blank" rel="noreferrer" className="metric-card group">
+              <p className="text-xs font-black uppercase tracking-[0.22em] text-slate-500">{item.label}</p>
+              <div className="mt-3 flex items-center justify-between gap-3">
+                <p className="break-words text-lg font-black text-white">{item.value}</p>
+                <ExternalLink className="shrink-0 text-emerald-300 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" size={18} />
+              </div>
+            </a>
+          ))}
         </section>
 
         <section className="grid gap-5 py-10 lg:grid-cols-2">
@@ -63,6 +83,16 @@ function ProjectsIndex() {
               </div>
 
               <p className="mt-5 leading-7 text-slate-300">{project.summary}</p>
+
+              <div className="mt-5 rounded-2xl border border-white/10 bg-black/20 p-4">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <p className="text-[0.68rem] font-black uppercase tracking-[0.22em] text-slate-500">Estado de muestra</p>
+                  <span className={`rounded-full border px-3 py-1 text-[0.68rem] font-black uppercase tracking-[0.16em] ${getSampleBadge(project).classes}`}>
+                    {getSampleBadge(project).label}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm leading-6 text-slate-300">{project.sampleNote}</p>
+              </div>
 
               <div className="mt-5 flex flex-wrap gap-2">
                 {project.modules.slice(0, 4).map((module) => (
@@ -102,7 +132,24 @@ function ProjectDetail({ project }) {
               <InfoCard label="Estado" value={project.status} />
               <InfoCard label="Madurez" value={project.maturity} />
               <InfoCard label="Línea / cliente" value={project.client} />
+              <InfoCard label="Repositorio" value={project.repository?.label ?? 'Pendiente'} />
+              <InfoCard label="Deploy" value={project.deploy?.status ?? 'Próximamente'} />
               <InfoCard label="Ruta futura" value={project.futureUrl.replace('https://', '')} />
+            </div>
+
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <StatusStrip icon={Github} label="Código" value={project.repository?.status ?? 'Pendiente'} />
+              <StatusStrip icon={Rocket} label="Publicación" value={project.deploy?.note ?? 'Demo segura dentro del sitio principal.'} />
+            </div>
+
+            <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-black/20 p-5">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <p className="text-[0.68rem] font-black uppercase tracking-[0.22em] text-slate-500">Estado de muestra</p>
+                <span className={`rounded-full border px-3 py-1 text-[0.68rem] font-black uppercase tracking-[0.16em] ${getSampleBadge(project).classes}`}>
+                  {getSampleBadge(project).label}
+                </span>
+              </div>
+              <p className="mt-3 text-sm leading-6 text-slate-300">{project.sampleNote}</p>
             </div>
           </div>
 
@@ -110,7 +157,7 @@ function ProjectDetail({ project }) {
             <div className="lab-panel p-6">
               <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">Links del proyecto</p>
               <h2 className="mt-2 text-2xl font-black text-white">Accesos públicos controlados</h2>
-              <p className="mt-3 text-sm leading-6 text-slate-400">Usa estos links para mostrar avance comercial sin entregar acceso al producto privado.</p>
+              <p className="mt-3 text-sm leading-6 text-slate-400">Puedes compartir estos links para conversar el proyecto sin entregar accesos privados.</p>
               <div className="mt-5">
                 <ProjectLinks project={project} />
               </div>
@@ -127,7 +174,7 @@ function ProjectDetail({ project }) {
         <section className="lab-panel p-6 md:p-8">
           <div className="grid gap-8 lg:grid-cols-[1fr_.9fr] lg:items-center">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.22em] text-cyan-200">Separación comercial/productiva</p>
+              <p className="text-sm font-black uppercase tracking-[0.22em] text-cyan-200">Demo pública / sistema privado</p>
               <h2 className="mt-3 text-3xl font-black text-white md:text-5xl">La ficha y la demo son públicas. El producto real no.</h2>
               <p className="mt-5 max-w-3xl leading-8 text-slate-300">
                 Esta estructura permite vender, demostrar y explicar el proyecto sin exponer bases de datos, permisos, paneles internos ni información de clientes.
@@ -147,10 +194,10 @@ function ProjectDetail({ project }) {
         <section className="py-10">
           <div className="cta-panel p-7 text-center md:p-10">
             <h2 className="text-3xl font-black text-white">¿Quieres mostrar este proyecto a un cliente?</h2>
-            <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-300">Comparte la ficha o la muestra pública. Para conversar sobre acceso privado, implementación o adaptación, usa el contacto comercial.</p>
+            <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-300">Comparte la ficha o la muestra. Para implementación, acceso privado o adaptación al negocio, conversemos por contacto directo.</p>
             <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
               <a href={project.demoPath} className="button-primary"><ExternalLink size={18} /> Abrir muestra</a>
-              <a href={getWhatsAppUrl(`Hola Cronhoz Labs, quiero conversar sobre ${project.name}.`)} target="_blank" rel="noreferrer" className="button-secondary"><MessageCircle size={18} /> WhatsApp {contact.whatsappDisplay}</a>
+              <a href={getWhatsAppUrl(`Hola Crohnoz Labs, quiero conversar sobre ${project.name}.`)} target="_blank" rel="noreferrer" className="button-secondary"><MessageCircle size={18} /> WhatsApp {contact.whatsappDisplay}</a>
             </div>
           </div>
         </section>
@@ -175,6 +222,17 @@ function ProjectsTopbar() {
         </a>
       </div>
     </header>
+  );
+}
+
+function StatusStrip({ icon: Icon, label, value }) {
+  return (
+    <div className="rounded-2xl border border-emerald-300/15 bg-emerald-300/[0.035] p-4">
+      <div className="flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-emerald-200">
+        <Icon size={15} /> {label}
+      </div>
+      <p className="mt-2 text-sm leading-6 text-slate-300">{value}</p>
+    </div>
   );
 }
 

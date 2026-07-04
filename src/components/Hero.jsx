@@ -4,9 +4,9 @@ import { featuredMetrics } from '../data/projects.js';
 import BrandMark from './BrandMark.jsx';
 
 const systemNodes = [
-  { icon: Workflow, title: 'Proceso', text: 'Mapeamos cómo trabaja el negocio hoy.' },
-  { icon: Database, title: 'Datos', text: 'Ordenamos información, historial y estados.' },
-  { icon: GitBranch, title: 'Sistema', text: 'Convertimos el flujo en una herramienta usable.' },
+  { icon: Workflow, title: 'Entender', text: 'Primero miramos cómo se trabaja hoy.' },
+  { icon: Database, title: 'Ordenar', text: 'Juntamos datos, historial y estados en un flujo claro.' },
+  { icon: GitBranch, title: 'Construir', text: 'Convertimos ese flujo en una herramienta usable.' },
 ];
 
 export default function Hero() {
@@ -17,7 +17,7 @@ export default function Hero() {
         <div>
           <div className="status-pill mb-6">
             <TerminalSquare size={16} className="text-mintlab" />
-            Taller digital de sistemas · automatización · infraestructura
+            Taller digital · sistemas · automatización · soporte
           </div>
 
           <div className="mb-8 hidden md:block">
@@ -29,7 +29,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
-            Cronhoz Labs convierte desorden administrativo, procesos manuales e infraestructura desaprovechada en sistemas claros, automatizados y mantenibles.
+            Si tu negocio ya funciona, pero cada avance trae más planillas, chats, cuentas pendientes y trabajo repetido, podemos ayudarte a ordenarlo en un sistema simple, útil y mantenible.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-2 text-sm font-bold text-slate-300">
@@ -41,11 +41,11 @@ export default function Hero() {
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a href="#contacto" className="button-primary">
-              Solicitar diagnóstico
+              Conversemos tu problema
               <ArrowRight size={19} />
             </a>
             <a href="/proyectos" className="button-secondary">
-              Ver proyectos
+              Ver ejemplos
             </a>
           </div>
 
@@ -72,10 +72,10 @@ export default function Hero() {
 
             <div className="relative space-y-4">
               <div className="rounded-3xl border border-mintlab/20 bg-black/25 p-5">
-                <p className="font-mono text-sm text-mintlab">&gt; ejecutar_diagnostico --negocio real</p>
-                <p className="mt-3 text-2xl font-black text-white">Problema operativo detectado.</p>
+                <p className="font-mono text-sm text-mintlab">&gt; cronhoz --ordenar operacion</p>
+                <p className="mt-3 text-2xl font-black text-white">No todo necesita un sistema enorme.</p>
                 <p className="mt-2 leading-7 text-slate-300">
-                  Información dispersa, trabajo repetitivo, falta de trazabilidad y equipos que pueden volver a ser útiles.
+                  A veces basta con escuchar bien, ordenar el flujo y construir la primera herramienta correcta.
                 </p>
               </div>
 
@@ -91,14 +91,14 @@ export default function Hero() {
                     <CheckCircle2 size={17} />
                     <span className="font-bold">Resultado</span>
                   </div>
-                  <p className="leading-7 text-slate-300">Un sistema que ordena, automatiza y entrega control.</p>
+                  <p className="leading-7 text-slate-300">Menos búsqueda, menos doble trabajo y más claridad para decidir.</p>
                 </div>
                 <div className="console-line">
                   <div className="mb-2 flex items-center gap-2 text-mintlab">
                     <ShieldCheck size={17} />
                     <span className="font-bold">Separación</span>
                   </div>
-                  <p className="leading-7 text-slate-300">Demo pública separada del sistema real del cliente.</p>
+                  <p className="leading-7 text-slate-300">Las muestras venden la idea sin exponer datos ni accesos reales.</p>
                 </div>
               </div>
             </div>
@@ -106,10 +106,10 @@ export default function Hero() {
             <div className="relative mt-5 rounded-3xl border border-white/10 bg-black/20 p-5">
               <div className="flex items-center gap-3 text-sm font-bold text-slate-300">
                 <Cpu className="text-mintlab" size={18} />
-                <span>No partimos desde la herramienta. Partimos desde la operación.</span>
+                <span>Primero la operación. Después la tecnología.</span>
               </div>
               <p className="mt-3 leading-7 text-slate-300">
-                Luego elegimos la solución mínima, escalable y realista para resolverla sin inflar costos ni complejidad.
+                Así evitamos construir de más y enfocamos el presupuesto donde realmente mueve la aguja.
               </p>
             </div>
           </div>

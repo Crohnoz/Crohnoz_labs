@@ -6,14 +6,14 @@ export default function Method() {
     <section id="metodo" className="border-y border-white/10 bg-white/[0.025] py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
-          <SectionHeader eyebrow="Método de trabajo" title="Una solución útil empieza entendiendo el proceso.">
+          <SectionHeader eyebrow="Método de trabajo" title="Antes de construir, entendemos cómo trabaja el negocio.">
             <p>
-              Evitamos vender tecnología innecesaria. Primero entendemos la operación, luego definimos una solución mínima funcional, y después la hacemos crecer con evidencia real.
+              El objetivo no es llenar todo de software. Es resolver primero lo que más duele, probarlo con uso real y hacerlo crecer cuando tenga sentido.
             </p>
             <div className="mt-6 rounded-3xl border border-cyan-300/20 bg-cyan-300/10 p-5">
-              <p className="text-base font-black text-white">Principio comercial</p>
+              <p className="text-base font-black text-white">Criterio simple</p>
               <p className="mt-2 text-base leading-7 text-slate-300">
-                Si la solución no ahorra tiempo, reduce errores, mejora control o habilita mejores decisiones, no es prioridad.
+                Si una función no ahorra tiempo, evita errores o mejora una decisión, no parte como prioridad.
               </p>
             </div>
           </SectionHeader>

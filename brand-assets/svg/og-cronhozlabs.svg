@@ -24,10 +24,10 @@
     <path d="M235 210H150C130.67 210 115 225.67 115 245V289C115 308.33 130.67 324 150 324H235" stroke="#F2F4F7" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M190 324H276" stroke="url(#cursor)" stroke-width="26" stroke-linecap="round"/>
   </g>
-  <text x="336" y="270" fill="#F2F4F7" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="16">CRONHOZ</text>
+  <text x="336" y="270" fill="#F2F4F7" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="16">CROHNOZ</text>
   <text x="340" y="348" fill="#10B981" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="43" font-weight="600" letter-spacing="24">LABS</text>
   <rect x="1010" y="250" width="46" height="13" rx="6.5" fill="#10B981"/>
   <text x="116" y="434" fill="#F2F4F7" font-family="Space Grotesk, Inter, Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" letter-spacing="1">Sistemas que hacen funcionar tu negocio.</text>
   <text x="116" y="492" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500">Automatización · Infraestructura · Software práctico · Soporte real</text>
-  <text x="116" y="560" fill="#10B981" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="700">&gt; cronhozlabs.cl</text>
+  <text x="116" y="560" fill="#10B981" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="700">&gt; crohnozlabs.cl</text>
 </svg>

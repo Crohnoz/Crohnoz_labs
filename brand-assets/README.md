@@ -1,10 +1,10 @@
-# Cronhoz Labs — Brand Assets V8
+# Crohnoz Labs — Brand Assets V8
 
 Identidad aprobada basada en el símbolo **C_**.
 
 ## Concepto
 
-La `C` representa Cronhoz, cliente, control y conexión.
+La `C` representa Crohnoz, cliente, control y conexión.
 El guion bajo representa terminal activa: un sistema listo para ejecutar, operar y mejorar.
 
 ## Claim
@@ -24,4 +24,4 @@ El guion bajo representa terminal activa: un sistema listo para ejecutar, operar
 
 - `svg/favicon.svg`
 - `svg/logo-horizontal.svg`
-- `svg/og-cronhozlabs.svg`
+- `svg/og-crohnozlabs.svg`

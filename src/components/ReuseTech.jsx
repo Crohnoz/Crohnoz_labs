@@ -2,10 +2,10 @@ import { Laptop, Recycle, Server, TabletSmartphone, Wrench } from 'lucide-react'
 import SectionHeader from './SectionHeader.jsx';
 
 const items = [
-  { icon: Laptop, title: 'Notebooks antiguos', text: 'Estaciones de trabajo, kioscos internos, pantallas de operación o terminales Linux livianas.' },
-  { icon: Server, title: 'Servidores locales', text: 'Backups, monitoreo, despliegues internos, pruebas y continuidad básica para operaciones pequeñas.' },
-  { icon: TabletSmartphone, title: 'Tablets y pantallas', text: 'Visualización de comandas, paneles internos, catálogos, formularios y puntos de consulta operativa.' },
-  { icon: Wrench, title: 'Equipos disponibles', text: 'PCs, impresoras, cámaras, redes locales y hardware subutilizado con nueva función operativa.' },
+  { icon: Laptop, title: 'Notebooks antiguos', text: 'Estaciones simples, pantallas internas o terminales livianas para trabajar sin comprar todo de nuevo.' },
+  { icon: Server, title: 'Servidores locales', text: 'Respaldos, monitoreo y pruebas internas cuando conviene mantener una parte cerca del negocio.' },
+  { icon: TabletSmartphone, title: 'Tablets y pantallas', text: 'Pantallas de consulta, comandas, formularios o paneles internos para que la información esté a la vista.' },
+  { icon: Wrench, title: 'Equipos disponibles', text: 'PCs, impresoras, cámaras o redes que todavía pueden cumplir una función concreta.' },
 ];
 
 export default function ReuseTech() {
@@ -17,11 +17,11 @@ export default function ReuseTech() {
             <div className="mb-5 inline-grid h-14 w-14 place-items-center rounded-2xl bg-cyan-300 text-ink shadow-glow">
               <Recycle size={28} />
             </div>
-            <SectionHeader eyebrow="Reutilización tecnológica" title="No siempre necesitas comprar tecnología nueva.">
+            <SectionHeader eyebrow="Reutilización tecnológica" title="A veces la primera inversión ya está sobre la mesa.">
               <p>
-                Evaluamos los equipos que ya existen en tu negocio y, cuando es viable, los convertimos en herramientas útiles para operar, monitorear, registrar o automatizar.
+                Revisamos los equipos que ya tienes y vemos si pueden convertirse en algo útil: una estación de trabajo, una pantalla, un respaldo o un pequeño servidor local.
               </p>
-              <p className="mt-4 font-bold text-cyan-100">Menos gasto inicial. Más utilidad real.</p>
+              <p className="mt-4 font-bold text-cyan-100">Menos gasto inicial. Más provecho de lo que ya existe.</p>
             </SectionHeader>
           </div>
 

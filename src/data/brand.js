@@ -1,85 +1,96 @@
 export const brand = {
-  name: 'Cronhoz Labs',
-  descriptor: 'Taller digital de sistemas, automatización e infraestructura',
+  name: 'Crohnoz Labs',
+  shortName: 'Crohnoz',
+  mark: 'C_',
   claim: 'Sistemas que hacen funcionar tu negocio.',
-  subclaim: 'Automatización, infraestructura y software práctico para operaciones reales.',
-  promise:
-    'Convertimos procesos desordenados en herramientas claras: sistemas administrativos, flujos automatizados, datos útiles, soporte real e infraestructura que trabaja 24/7.',
+  subclaim: 'Automatización, bases de datos, infraestructura y software práctico para operaciones reales.',
   positioning:
-    'Una consultora/taller digital que combina lectura operacional, desarrollo de software, reutilización tecnológica e implementación práctica para negocios reales.',
-  symbol: 'C_',
-  symbolMeaning:
-    'La C representa Cronhoz, cliente, control y conexión. El guion bajo representa terminal activa: un sistema listo para ejecutar, operar y mejorar.',
+    'Crohnoz Labs nace para resolver problemas que se ven todos los días: cuentas que se pierden, procesos que dependen de WhatsApp, equipos antiguos sin uso y negocios que necesitan orden sin llenarse de herramientas innecesarias.',
+  promise:
+    'Escuchamos cómo funciona tu operación, bajamos el problema a tierra y construimos una solución útil, mantenible y realista.',
 };
 
 export const brandPromise = {
-  eyebrow: 'Identidad Cronhoz',
-  title: 'Una marca de comando: simple, técnica y orientada a que las cosas funcionen.',
+  eyebrow: 'Enfoque Crohnoz',
+  title: 'Tecnología práctica, explicada en simple y puesta a trabajar.',
   description:
-    'Cronhoz Labs no se presenta como fábrica de páginas web. Se presenta como un taller digital que entiende la operación, identifica fricción y construye sistemas utilizables para resolver trabajo real.',
+    'La idea no es impresionar con sistemas enormes. Es crear herramientas que la gente pueda usar, que resuelvan un problema claro y que acompañen el crecimiento del negocio.',
 };
 
 export const brandPrinciples = [
   {
-    title: 'Operación primero',
-    description: 'Antes de programar, se entiende cómo trabaja el negocio y dónde se pierde tiempo, dinero o información.',
+    title: 'Claro',
+    description: 'Si el cliente no entiende para qué sirve, todavía no está bien diseñado.',
   },
   {
-    title: 'Sistema útil',
-    description: 'Se prioriza una solución funcional, mantenible y escalable antes que un sistema gigante difícil de operar.',
+    title: 'Útil',
+    description: 'Cada función debe ahorrar tiempo, ordenar información o mejorar una decisión.',
   },
   {
-    title: 'Separación segura',
-    description: 'Las muestras públicas venden la idea; los sistemas reales quedan privados, protegidos y separados.',
+    title: 'Realista',
+    description: 'Partimos con lo que más duele y crecemos por etapas, sin inflar costos.',
   },
   {
-    title: 'Tecnología aprovechable',
-    description: 'Se evalúa reutilizar equipos disponibles antes de exigir compras innecesarias.',
+    title: 'Acompañado',
+    description: 'No se entrega un sistema y se abandona: se prueba, se ajusta y se mantiene.',
   },
-];
-
-export const brandTone = [
-  { label: 'Claro', description: 'Explica sin decorar ni esconder el problema detrás de tecnicismos.' },
-  { label: 'Resolutivo', description: 'Habla desde la acción: diagnosticar, ordenar, automatizar, implementar y mantener.' },
-  { label: 'Preciso', description: 'Define módulos, flujos, datos, permisos, respaldo, alcance y límites reales.' },
-  { label: 'Cercano', description: 'Tecnología entendible para personas que necesitan operar mejor, no impresionar a otros técnicos.' },
 ];
 
 export const solutionFamilies = [
   {
-    name: 'Cronhoz Admin',
-    focus: 'Cobros, deuda, vouchers, reportes y administración interna.',
+    name: 'Crohnoz Admin',
+    focus: 'Cobros, arriendos, deudas, vouchers, clientes y reportes administrativos.',
     route: '/proyectos/sistema-arriendos',
   },
   {
-    name: 'Cronhoz Ops',
-    focus: 'Comandas, inventario, producción, estaciones, recetas y mermas.',
+    name: 'Crohnoz Ops',
+    focus: 'Comandas, inventario, producción, estaciones de trabajo y operación diaria.',
     route: '/proyectos/sweetops',
   },
   {
-    name: 'Cronhoz Trace',
-    focus: 'Evidencia, bitácora, trazabilidad, reclamos y control por evento.',
+    name: 'Crohnoz Trace',
+    focus: 'Evidencia, bitácoras, trazabilidad y control de reclamos o entregas.',
     route: '/proyectos/kronos-trace',
   },
   {
-    name: 'Cronhoz Core',
-    focus: 'Infraestructura, respaldo, monitoreo, soporte remoto y continuidad.',
+    name: 'Crohnoz Core',
+    focus: 'Infraestructura, servidores, monitoreo, respaldos y soporte técnico.',
     route: '/proyectos/homelab',
   },
 ];
 
 export const visualIdentity = [
-  { name: 'Obsidiana operativa', value: '#0B0F14', use: 'Fondo principal, profundidad y sensación de consola.' },
-  { name: 'Panel grafito', value: '#111827', use: 'Tarjetas, navegación, módulos y superficies técnicas.' },
-  { name: 'Verde terminal', value: '#10B981', use: 'Cursor, acciones, sistema activo, éxito y operación funcionando.' },
-  { name: 'Azul datos', value: '#38BDF6', use: 'Datos, métricas, trazabilidad y detalles secundarios.' },
-  { name: 'Blanco frío', value: '#F2F4F7', use: 'Texto principal, logotipo y alto contraste profesional.' },
+  { name: 'Obsidiana', value: '#0B0F14', use: 'Fondo principal, sensación técnica y sobria.' },
+  { name: 'Panel', value: '#111827', use: 'Tarjetas, contenedores y superficies de lectura.' },
+  { name: 'Grafito', value: '#1E293B', use: 'Bordes, capas secundarias y contraste suave.' },
+  { name: 'Blanco frío', value: '#F2F4F7', use: 'Texto principal y logotipo.' },
+  { name: 'Verde terminal', value: '#10B981', use: 'Cursor, estados activos, llamados de acción.' },
+  { name: 'Azul datos', value: '#38BDF6', use: 'Datos, gráficos, links y acentos secundarios.' },
+];
+
+export const brandTone = [
+  {
+    label: 'Humano',
+    description: 'Hablar como alguien que entiende el problema, no como una ficha técnica.',
+  },
+  {
+    label: 'Concreto',
+    description: 'Explicar qué cambia en la operación: menos pérdida, más orden, mejores decisiones.',
+  },
+  {
+    label: 'Técnico cuando importa',
+    description: 'Usar lenguaje técnico solo cuando ayuda a dar confianza o claridad.',
+  },
+  {
+    label: 'Sin humo',
+    description: 'Evitar promesas gigantes. Mejor mostrar avances reales, etapas y límites claros.',
+  },
 ];
 
 export const brandApplications = [
-  'Landing institucional en cronhozlabs.cl',
-  'Muestras públicas por proyecto con datos ficticios',
-  'Fichas comerciales por solución',
-  'Sistemas privados separados por cliente',
-  'Rutas futuras para productos y verticales',
+  'Sitio web y páginas de proyecto',
+  'Demos públicas con datos ficticios',
+  'Propuestas comerciales y diagnósticos',
+  'Paneles internos y sistemas de clientes',
+  'Favicon, firma de correo y material gráfico',
 ];

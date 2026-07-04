@@ -1,9 +1,9 @@
-# Guía rápida de despliegue — Cronhoz Labs
+# Guía rápida de despliegue — Crohnoz Labs
 
 ## 1. Abrir proyecto
 
 ```bash
-cd cronhozlabs-site
+cd crohnozlabs-site
 npm install
 npm run dev
 ```
@@ -40,9 +40,9 @@ npm run preview
 ```bash
 git init
 git add .
-git commit -m "Cronhoz Labs landing with public demo routes"
+git commit -m "Crohnoz Labs landing with public demo routes"
 git branch -M main
-git remote add origin https://github.com/Crohnoz/cronhozlabs-site.git
+git remote add origin https://github.com/Crohnoz/crohnozlabs-site.git
 git push -u origin main
 ```
 
@@ -73,7 +73,7 @@ Esto permite que rutas internas como `/muestras/sweetops` funcionen al refrescar
 Dominio principal actualmente documentado:
 
 ```txt
-cronhozlabs.cl
+crohnozlabs.cl
 ```
 
 Si el dominio definitivo será `cronoslab.cl`, cambia primero:
@@ -118,4 +118,4 @@ Netlify irá indicando si falta algún registro. Cuando el dominio propague, act
 - Mantener demos separadas de los sistemas productivos.
 - Nunca conectar muestras públicas a bases de datos reales de clientes.
 - Agregar capturas simuladas cuando existan.
-- Confirmar ortografía pública final: Cronhoz Labs / cronhozlabs.cl.
+- Confirmar ortografía pública final: Crohnoz Labs / crohnozlabs.cl.

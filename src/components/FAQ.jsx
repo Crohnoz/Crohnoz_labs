@@ -6,9 +6,9 @@ export default function FAQ() {
   return (
     <section id="faq" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
-        <SectionHeader eyebrow="Preguntas frecuentes" title="Claridad antes de cotizar.">
+        <SectionHeader eyebrow="Preguntas frecuentes" title="Preguntas que conviene resolver antes de empezar.">
           <p>
-            Para evitar vueltas innecesarias, dejamos respondidas las dudas comerciales más comunes antes del diagnóstico inicial.
+            Mientras más claro esté el punto de partida, mejor se puede estimar qué construir, cuánto avanzar y qué dejar para después.
           </p>
         </SectionHeader>
 

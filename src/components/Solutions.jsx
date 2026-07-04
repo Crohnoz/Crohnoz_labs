@@ -5,9 +5,9 @@ export default function Solutions() {
   return (
     <section id="soluciones" className="border-y border-white/10 bg-white/[0.025] py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionHeader eyebrow="Soluciones Cronhoz" title="Orden administrativo, automatización e implementación práctica." align="center">
+        <SectionHeader eyebrow="Soluciones Crohnoz" title="Herramientas concretas para ordenar el día a día." align="center">
           <p>
-            Desarrollamos herramientas que nacen desde la operación real: qué se cobra, qué se registra, quién lo usa, qué se pierde y qué decisión necesita mejores datos.
+            Nos metemos en la forma real de trabajar: qué se cobra, qué se anota, quién lo usa, qué se pierde y qué debería verse más claro.
           </p>
         </SectionHeader>
 

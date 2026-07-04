@@ -6,12 +6,12 @@ export default function PainPoints() {
   return (
     <section id="problemas" className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-start">
-        <SectionHeader eyebrow="Problemas reales" title="Cuando el negocio crece, el desorden también crece.">
+        <SectionHeader eyebrow="Señales comunes" title="Cuando el negocio empieza a crecer, algunas cosas se empiezan a escapar.">
           <p>
-            Muchos negocios no fallan por falta de esfuerzo. Fallan porque la información queda repartida entre cuadernos, planillas, WhatsApp, fotos y memoria humana.
+            No siempre falta trabajo. Muchas veces sobra esfuerzo y falta una forma más clara de guardar, revisar y compartir la información.
           </p>
           <p className="mt-4">
-            Cronhoz Labs convierte esa operación diaria en sistemas simples, medibles y funcionales.
+            Ahí es donde una herramienta bien hecha puede devolver tiempo, orden y control.
           </p>
         </SectionHeader>
 

@@ -6,13 +6,13 @@ export default function CommercialModels() {
   return (
     <section id="modelos" className="border-y border-white/10 bg-white/[0.025] py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionHeader eyebrow="Formas de trabajo" title="Desde diagnóstico hasta sistema operacional." align="center">
+        <SectionHeader eyebrow="Formas de trabajo" title="Distintas formas de partir, según el tamaño del problema." align="center">
           <p>
-            Cada cliente entra por un nivel distinto. Primero se entiende el problema, luego se define una solución realista y finalmente se implementa con foco operativo.
+            No todos necesitan lo mismo. Algunos requieren solo ordenar una idea; otros ya necesitan un MVP, mantención o un sistema más completo.
           </p>
         </SectionHeader>
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-4">
+        <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
           {serviceModels.map((model) => (
             <article key={model.name} className="lab-card flex flex-col">
               <span className="mb-5 w-fit rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs font-bold text-cyan-100">
@@ -33,9 +33,9 @@ export default function CommercialModels() {
         </div>
 
         <div className="mt-8 rounded-[2rem] border border-cyan-300/20 bg-cyan-300/10 p-6 text-center">
-          <p className="text-lg font-black text-white">Modelo flexible según alcance, urgencia y operación.</p>
+          <p className="text-lg font-black text-white">La idea es partir con una escala razonable.</p>
           <p className="mt-2 text-slate-300">
-            El objetivo es evitar cotizaciones infladas y construir una primera versión que pueda demostrar valor rápido.
+            Primero demostramos valor. Después se decide si conviene seguir creciendo.
           </p>
         </div>
       </div>

@@ -2,15 +2,15 @@ import { site } from '../data/site.js';
 
 export default function BrandMark({ compact = false, markOnly = false, className = '' }) {
   if (markOnly) {
-    return <CronhozSymbol className={className} />;
+    return <CrohnozSymbol className={className} />;
   }
 
   return (
     <span className={`inline-flex items-center gap-3 ${className}`}>
-      <CronhozSymbol />
+      <CrohnozSymbol />
       {!compact ? (
         <span className="leading-none">
-          <span className="brand-wordmark block text-[1.05rem] font-black text-white">CRONHOZ<span className="text-mintlab">_</span></span>
+          <span className="brand-wordmark block text-[1.05rem] font-black text-white">CROHNOZ<span className="text-mintlab">_</span></span>
           <span className="brand-subword block text-[0.72rem] font-bold text-mintlab">LABS</span>
           <span className="sr-only">{site.name} · {site.primaryDomain}</span>
         </span>
@@ -19,7 +19,7 @@ export default function BrandMark({ compact = false, markOnly = false, className
   );
 }
 
-export function CronhozSymbol({ className = '' }) {
+export function CrohnozSymbol({ className = '' }) {
   return (
     <span className={`brand-mark-v8 ${className}`} aria-hidden="true">
       <svg viewBox="0 0 128 128" className="h-full w-full" role="img" focusable="false">

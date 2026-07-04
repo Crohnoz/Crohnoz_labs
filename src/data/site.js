@@ -1,14 +1,14 @@
-// Dominio centralizado. Si decides usar cronoslab.cl como principal, cambia primaryDomain y primaryUrl aquí,
-// y luego reemplaza el dominio en index.html, robots.txt y sitemap.xml para SEO.
 export const site = {
-  name: 'Cronhoz Labs',
-  legalName: 'Cronhoz Labs',
+  name: 'Crohnoz Labs',
+  legalName: 'Crohnoz Labs',
   tagline: 'Sistemas que hacen funcionar tu negocio.',
   description:
-    'Taller digital de sistemas, automatización e infraestructura para operaciones reales.',
-  primaryDomain: 'cronhozlabs.cl',
-  primaryUrl: 'https://cronhozlabs.cl',
-  requestedDomainAlias: 'cronoslab.cl',
+    'Taller digital de sistemas, automatización, bases de datos e infraestructura para operaciones reales.',
+  primaryDomain: 'crohnozlabs.cl',
+  primaryUrl: 'https://crohnozlabs.cl',
+  netlifyUrl: 'https://crohnozlabs.netlify.app',
+  githubOrg: 'Crohnoz',
+  githubMainRepo: 'https://github.com/Crohnoz/Crohnoz_labs',
   country: 'Chile',
   locationLabel: 'Chile · remoto / híbrido según proyecto',
   demoBasePath: '/muestras',
@@ -18,7 +18,7 @@ export const site = {
 
 export const demoDisclaimer = {
   label: 'Muestra pública',
-  title: 'Esta vista es una demostración comercial, no el sistema productivo del cliente.',
+  title: 'Esta es una demo comercial. No es el sistema real de ningún cliente.',
   description:
-    'Las rutas públicas de Cronhoz Labs sirven para presentar conceptos, módulos y casos de uso sin exponer bases de datos reales, información sensible, paneles internos ni credenciales de clientes.',
+    'Las muestras sirven para explicar la idea, conversar el alcance y mostrar flujos con datos ficticios. Los sistemas productivos viven separados, con acceso privado y bases de datos protegidas.',
 };

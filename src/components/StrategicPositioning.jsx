@@ -5,12 +5,12 @@ export default function StrategicPositioning() {
   return (
     <section id="posicionamiento" className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-start">
-        <SectionHeader eyebrow="Posicionamiento" title="Una carta de presentación para clientes con problemas reales.">
+        <SectionHeader eyebrow="Posicionamiento" title="Una forma simple de explicar qué hacemos y por qué importa.">
           <p>
-            Cronhoz Labs se presenta como un socio técnico: escucha el problema, modela el proceso, construye la herramienta y acompaña la operación.
+            Crohnoz Labs escucha el problema, ordena el proceso y construye una herramienta que pueda usarse en el día a día.
           </p>
           <p className="mt-4 font-bold text-cyan-100">
-            El foco no es vender tecnología por vender. El foco es entregar control, orden y continuidad.
+            No se trata de sumar tecnología porque sí. Se trata de recuperar tiempo, claridad y control.
           </p>
         </SectionHeader>
 

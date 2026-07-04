@@ -3,10 +3,10 @@ import SectionHeader from './SectionHeader.jsx';
 
 const labStack = [
   { icon: TerminalSquare, label: 'Linux, terminal y automatización' },
-  { icon: Database, label: 'Django, APIs y bases de datos' },
+  { icon: Database, label: 'Django, APIs y bases de datos por cliente' },
   { icon: Cloud, label: 'Deploys web y servicios en la nube' },
   { icon: ServerCog, label: 'Docker, Portainer y servicios internos' },
-  { icon: Activity, label: 'Monitoreo, backups y continuidad' },
+  { icon: Activity, label: 'Monitoreo, backups y recuperación' },
   { icon: Lock, label: 'Seguridad operativa básica' },
 ];
 
@@ -26,6 +26,7 @@ export default function LabInfrastructure() {
             <Status label="homelab" value="active" />
             <Status label="deploy pipeline" value="ready" />
             <Status label="monitoring" value="enabled" />
+            <Status label="database policy" value="separate · backed up" />
             <Status label="legacy hardware" value="reusable" />
             <Status label="business focus" value="administrative solutions" />
             <Status label="delivery model" value="local · cloud · hybrid" />
@@ -37,15 +38,15 @@ export default function LabInfrastructure() {
               <p className="font-black">Infraestructura progresiva</p>
             </div>
             <p className="mt-3 leading-7 text-slate-300">
-              Partimos con una base simple y escalamos cuando el cliente, el uso y el presupuesto lo justifican.
+              Partimos simple y escalamos solo cuando el uso y el presupuesto lo justifican.
             </p>
           </div>
         </div>
 
         <div>
-          <SectionHeader eyebrow="Infraestructura real" title="Un laboratorio para probar, desplegar y sostener soluciones.">
+          <SectionHeader eyebrow="Infraestructura real" title="Un laboratorio pequeño, real y preparado para probar soluciones.">
             <p>
-              Cronhoz Labs no es solo una vitrina. Es un entorno de trabajo donde se prueban servidores locales, despliegues, monitoreo, respaldos, estaciones antiguas y soluciones híbridas para clientes con presupuesto realista.
+              Detrás del sitio hay un entorno de pruebas: servidores locales, monitoreo, respaldos, despliegues y equipos reutilizados. No es lujo; es una base práctica para construir y sostener proyectos con presupuesto realista.
             </p>
           </SectionHeader>
 
