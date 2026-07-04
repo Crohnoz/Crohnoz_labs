@@ -31,6 +31,7 @@ export default function ProjectLinks({ project, compact = false }) {
         const disabled = link.disabled || !link.href || link.href === '#';
         const iconClass = iconClassByKind[link.kind] ?? iconClassByKind.internal;
         const statusClass = disabled ? 'route-status-muted' : link.kind === 'github' ? 'route-status-info' : 'route-status-active';
+        const label = link.kind === 'demo' && disabled ? 'Estado de muestra' : link.label;
 
         const content = (
           <>
@@ -40,7 +41,7 @@ export default function ProjectLinks({ project, compact = false }) {
               </div>
               <div className="min-w-0 flex-1">
                 <div className="flex flex-wrap items-center gap-2">
-                  <p className="font-black text-white">{link.label}</p>
+                  <p className="font-black text-white">{label}</p>
                   <span className={`route-status ${statusClass}`}>{link.status}</span>
                 </div>
                 <p className="mt-1 break-words text-sm leading-6 text-slate-400">{link.description}</p>

@@ -8,6 +8,22 @@ function getSampleBadge(project) {
   if (project.sampleState === 'available') return { label: 'Muestra pública disponible', classes: 'border-emerald-300/25 bg-emerald-300/10 text-emerald-100' };
   return { label: 'Muestra en preparación', classes: 'border-slate-400/25 bg-slate-400/10 text-slate-200' };
 }
+
+function getSampleAction(project) {
+  if (project.sampleState === 'available') {
+    return { label: 'Abrir muestra', href: project.demoPath, variant: 'primary' };
+  }
+
+  if (project.sampleState === 'internal') {
+    return { label: 'Vista interna', href: project.demoPath, variant: 'secondary' };
+  }
+
+  if (project.slug === 'fdr-centro-podologico') {
+    return { label: 'Pendiente de reconstrucción', href: project.demoPath, variant: 'secondary' };
+  }
+
+  return { label: 'Ver estado de muestra', href: project.demoPath, variant: 'secondary' };
+}
 import BrandMark from './BrandMark.jsx';
 import FloatingActions from './FloatingActions.jsx';
 import Footer from './Footer.jsx';
@@ -196,7 +212,14 @@ function ProjectDetail({ project }) {
             <h2 className="text-3xl font-black text-white">¿Quieres mostrar este proyecto a un cliente?</h2>
             <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-300">Comparte la ficha o la muestra. Para implementación, acceso privado o adaptación al negocio, conversemos por contacto directo.</p>
             <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-              <a href={project.demoPath} className="button-primary"><ExternalLink size={18} /> Abrir muestra</a>
+              {(() => {
+                const action = getSampleAction(project);
+                return (
+                  <a href={action.href} className={action.variant === 'primary' ? 'button-primary' : 'button-secondary'}>
+                    <ExternalLink size={18} /> {action.label}
+                  </a>
+                );
+              })()}
               <a href={getWhatsAppUrl(`Hola Crohnoz Labs, quiero conversar sobre ${project.name}.`)} target="_blank" rel="noreferrer" className="button-secondary"><MessageCircle size={18} /> WhatsApp {contact.whatsappDisplay}</a>
             </div>
           </div>

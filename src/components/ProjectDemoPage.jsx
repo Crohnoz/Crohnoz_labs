@@ -128,15 +128,22 @@ export default function ProjectDemoPage({ slug }) {
 }
 
 function DemoUnavailableState({ project }) {
+  const heading = project.sampleState === 'internal' ? 'Vista interna' : project.slug === 'fdr-centro-podologico' ? 'Pendiente de reconstrucción' : 'Muestra en preparación';
+  const intro = project.sampleState === 'internal'
+    ? 'La ficha pública sigue disponible, pero esta vista se mantiene interna y privada.'
+    : project.slug === 'fdr-centro-podologico'
+      ? 'La plataforma es recuperable, pero la base de datos está por reconstruir y la muestra pública aún no está lista.'
+      : 'La ficha pública sigue disponible, pero la muestra pública aún no está lista.';
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-ink text-slate-100 selection:bg-cyan-300 selection:text-ink">
       <DemoBackground />
       <main className="mx-auto max-w-7xl px-5 py-8 lg:px-8">
         <DemoTopbar />
         <section className="cta-panel mt-10 p-7 md:p-12">
-          <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">Muestra en preparación</p>
+          <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">{heading}</p>
           <h1 className="mt-4 text-5xl font-black tracking-[-0.055em] text-white md:text-7xl">{project.name}</h1>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">La ficha pública sigue disponible, pero la muestra pública aún no está lista.</p>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">{intro}</p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300">{project.sampleNote}</p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
