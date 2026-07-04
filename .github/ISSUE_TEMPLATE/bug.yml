@@ -1,0 +1,35 @@
+name: Bug report
+description: Reporta problemas de rutas, links, build o comportamiento visual.
+title: "[Bug] "
+labels:
+  - patrol
+  - bug
+body:
+  - type: textarea
+    id: issue
+    attributes:
+      label: Descripción del problema
+      description: Qué está fallando.
+      placeholder: Ej. Un link de proyecto aparece como activo aunque la demo aún no está lista.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      description: Pasos breves para reproducirlo.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+      description: Qué debería pasar.
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamiento actual
+      description: Qué pasa realmente.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Entorno
+      description: Ruta, navegador, versión o contexto relevante.

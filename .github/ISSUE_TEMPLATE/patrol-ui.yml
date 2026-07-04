@@ -1,0 +1,32 @@
+name: Patrol UI
+description: Mejoras pequeñas de UI, CSS, responsive, copy o componentes visuales.
+title: "[Patrol UI] "
+labels:
+  - patrol
+  - ui
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Resumen del ajuste
+      description: Explica qué se quiere mejorar.
+      placeholder: Ej. Ajustar el espaciado en mobile de la vitrina de proyectos.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Indica la vista o sección afectada.
+      placeholder: Ej. /proyectos, cards de proyectos, navegación móvil.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterios de aceptación
+      description: Qué debería verse o comportarse mejor.
+      placeholder: Ej. El bloque debe verse alineado en mobile y no romper el flujo.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notas adicionales
+      description: Consideraciones o restricciones.
