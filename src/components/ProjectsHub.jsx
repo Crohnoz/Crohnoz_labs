@@ -210,7 +210,7 @@ function ProjectDetail({ project }) {
         <section className="py-10">
           <div className="cta-panel p-7 text-center md:p-10">
             <h2 className="text-3xl font-black text-white">¿Quieres mostrar este proyecto a un cliente?</h2>
-            <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-300">Comparte la ficha o la muestra. Para implementación, acceso privado o adaptación al negocio, conversemos por contacto directo.</p>
+            <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-300">Comparte la ficha pública del proyecto o revisa el estado de la muestra. Para implementación, acceso privado o adaptación al negocio, conversemos por contacto directo.</p>
             <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
               {(() => {
                 const action = getSampleAction(project);
