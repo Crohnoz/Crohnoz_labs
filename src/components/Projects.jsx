@@ -15,10 +15,10 @@ export default function Projects() {
       <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <SectionHeader eyebrow="Proyectos" title="Ideas que nacieron desde problemas concretos.">
           <p>
-            Aquí mostramos el tipo de soluciones que estamos construyendo. Las demos son públicas y seguras; los sistemas reales quedan privados para cada cliente.
+            Aquí mostramos el tipo de soluciones que estamos construyendo. Las fichas públicas y los estados de muestra ayudan a comprender la idea; los sistemas reales quedan privados para cada cliente.
           </p>
         </SectionHeader>
-        <a href="/proyectos" className="button-secondary button-compact w-fit">
+        <a href="/proyectos" className="button-secondary button-compact w-full justify-center sm:w-fit">
           Ver todos los proyectos
         </a>
       </div>
@@ -74,7 +74,7 @@ export default function Projects() {
                     <MonitorPlay size={15} /> Ver más
                   </span>
                   <a href={project.showcasePath} className="inline-flex items-center gap-1 text-xs font-black text-cyan-100 hover:text-cyan-200">
-                    Ficha <ArrowRight size={14} />
+                    Ficha pública <ArrowRight size={14} />
                   </a>
                 </div>
                 <ProjectLinks project={project} compact />

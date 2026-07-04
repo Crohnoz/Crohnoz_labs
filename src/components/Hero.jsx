@@ -17,7 +17,7 @@ export default function Hero() {
         <div>
           <div className="status-pill mb-6">
             <TerminalSquare size={16} className="text-mintlab" />
-            Taller digital · sistemas · automatización · soporte
+            Taller digital · procesos · automatización · soporte
           </div>
 
           <div className="mb-8 hidden md:block">
@@ -40,12 +40,12 @@ export default function Hero() {
           </div>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="#contacto" className="button-primary">
-              Conversemos tu problema
+            <a href="#contacto" className="button-primary w-full justify-center sm:w-auto">
+              Hablemos de tu operación
               <ArrowRight size={19} />
             </a>
-            <a href="/proyectos" className="button-secondary">
-              Ver ejemplos
+            <a href="/proyectos" className="button-secondary w-full justify-center sm:w-auto">
+              Ver proyectos
             </a>
           </div>
 
@@ -98,7 +98,7 @@ export default function Hero() {
                     <ShieldCheck size={17} />
                     <span className="font-bold">Separación</span>
                   </div>
-                  <p className="leading-7 text-slate-300">Las muestras venden la idea sin exponer datos ni accesos reales.</p>
+                  <p className="leading-7 text-slate-300">Las fichas y estados de muestra ayudan a entender la idea sin exponer datos ni accesos reales.</p>
                 </div>
               </div>
             </div>
