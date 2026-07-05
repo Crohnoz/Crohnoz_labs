@@ -58,7 +58,7 @@ function ProjectsIndex() {
                 <Layers3 size={16} /> Hub de proyectos
               </div>
               <h1 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-[-0.055em] text-white md:text-7xl">
-                Vitrina técnica con <span className="text-gradient">repos, demos y rutas seguras.</span>
+                Vitrina técnica con <span className="text-gradient">repos, estados de muestra y rutas seguras.</span>
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
                 Cada proyecto tiene una ficha pública. Las muestras se marcan según estén listas, en preparación o reservadas para uso interno, para no confundir el contexto con el sistema real.
@@ -66,7 +66,7 @@ function ProjectsIndex() {
             </div>
             <div className="lab-panel p-6">
               <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">Regla de seguridad</p>
-              <p className="mt-3 text-2xl font-black text-white">La demo vende la solución. El sistema real queda privado.</p>
+              <p className="mt-3 text-2xl font-black text-white">La ficha explica la solución. El sistema real queda privado.</p>
               <p className="mt-4 leading-7 text-slate-300">{demoDisclaimer.description}</p>
             </div>
           </div>
@@ -210,13 +210,13 @@ function ProjectDetail({ project }) {
           <div className="grid gap-8 lg:grid-cols-[1fr_.9fr] lg:items-center">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.22em] text-cyan-200">Demo pública / sistema privado</p>
-              <h2 className="mt-3 text-3xl font-black text-white md:text-5xl">La ficha y la demo son públicas. El producto real no.</h2>
+              <h2 className="mt-3 text-3xl font-black text-white md:text-5xl">La ficha es pública. La muestra solo se abre cuando es segura.</h2>
               <p className="mt-5 max-w-3xl leading-8 text-slate-300">
-                Esta estructura permite vender, demostrar y explicar el proyecto sin exponer bases de datos, permisos, paneles internos ni información de clientes.
+                Esta estructura permite explicar el proyecto sin exponer bases de datos, permisos, paneles internos ni información de clientes.
               </p>
             </div>
             <div className="grid gap-3">
-              {['Ficha comercial pública', 'Demo con datos ficticios', 'Ruta futura reservada', 'Sistema privado separado'].map((item) => (
+              {['Ficha comercial pública', 'Muestra con datos ficticios', 'Ruta futura reservada', 'Sistema privado separado'].map((item) => (
                 <div key={item} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-black/20 p-4 text-slate-300">
                   {item.includes('privado') ? <LockKeyhole className="text-amber-200" size={18} /> : <ShieldCheck className="text-cyan-300" size={18} />}
                   <span>{item}</span>
