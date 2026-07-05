@@ -13,7 +13,7 @@ export default function FloatingActions() {
           <Mail size={19} />
         </a>
         <a
-          href="#inicio"
+          href="/#inicio"
           className="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/[0.04] text-slate-200 transition hover:border-cyan-300/35 hover:bg-cyan-300/10 hover:text-cyan-100"
           aria-label="Volver al inicio"
         >

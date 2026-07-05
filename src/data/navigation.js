@@ -30,7 +30,7 @@ export const navItems = [
 ];
 
 export const secondaryNavItems = [
-  { id: 'muestras', href: '/muestras', label: 'Muestras públicas', icon: MonitorPlay, type: 'page' },
+  { id: 'muestras', href: '/muestras', label: 'Estado de muestras', icon: MonitorPlay, type: 'page' },
   { id: 'explorar', href: '/explorar', label: 'Explorar más', icon: SearchCheck, type: 'page' },
   { id: 'problemas', href: '/explorar#problemas', label: 'Problemas', icon: SearchCheck, type: 'page' },
   { id: 'clientes', href: '/explorar#clientes', label: 'Clientes', icon: BriefcaseBusiness, type: 'page' },
@@ -55,7 +55,7 @@ export const quickNavigationItems = [
     href: '/proyectos',
     icon: Layers3,
     title: 'Ver proyectos',
-    description: 'Ejemplos de soluciones, demos seguras y rutas reservadas.',
+    description: 'Ejemplos de soluciones, estados de muestra y rutas reservadas.',
   },
   {
     href: '#continuidad',

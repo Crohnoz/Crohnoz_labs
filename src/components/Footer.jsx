@@ -1,4 +1,4 @@
-import { contact } from '../data/contact.js';
+import { contact, getMailtoUrl, getWhatsAppUrl } from '../data/contact.js';
 import { site } from '../data/site.js';
 
 export default function Footer() {
@@ -17,18 +17,18 @@ export default function Footer() {
         <div>
           <p className="mb-3 text-sm font-black uppercase tracking-[0.2em] text-slate-500">Explorar</p>
           <div className="grid gap-2 text-sm text-slate-400">
-            <a className="hover:text-emerald-200" href="/marca">Branding</a>
+            <a className="hover:text-emerald-200" href="/marca">Marca</a>
             <a className="hover:text-emerald-200" href="/#soluciones">Soluciones</a>
             <a className="hover:text-emerald-200" href="/proyectos">Hub de proyectos</a>
-            <a className="hover:text-emerald-200" href="/muestras">Muestras públicas</a>
+            <a className="hover:text-emerald-200" href="/muestras">Estado de muestras</a>
             <a className="hover:text-emerald-200" href="/explorar">Detalle extendido</a>
           </div>
         </div>
         <div>
           <p className="mb-3 text-sm font-black uppercase tracking-[0.2em] text-slate-500">Contacto</p>
           <div className="grid gap-2 text-sm text-slate-400">
-            <a className="hover:text-emerald-200" href={`mailto:${contact.email}`}>{contact.email}</a>
-            <a className="hover:text-emerald-200" href={`https://wa.me/${contact.whatsappNumber}`} target="_blank" rel="noreferrer">{contact.whatsappDisplay}</a>
+            <a className="hover:text-emerald-200" href={getMailtoUrl()}>{contact.email}</a>
+            <a className="hover:text-emerald-200" href={getWhatsAppUrl()} target="_blank" rel="noreferrer">{contact.whatsappDisplay}</a>
             <span>{site.locationLabel}</span>
             <span>© {year} {site.name}</span>
           </div>
