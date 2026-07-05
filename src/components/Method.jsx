@@ -11,9 +11,9 @@ export default function Method() {
               El objetivo no es llenar todo de software. Es resolver primero lo que más duele, probarlo con uso real y hacerlo crecer cuando tenga sentido.
             </p>
             <div className="mt-6 rounded-3xl border border-cyan-300/20 bg-cyan-300/10 p-5">
-              <p className="text-base font-black text-white">Criterio simple</p>
+              <p className="text-base font-black text-white">Primero diagnóstico, después decisión</p>
               <p className="mt-2 text-base leading-7 text-slate-300">
-                Si una función no ahorra tiempo, evita errores o mejora una decisión, no parte como prioridad.
+                Si una función no ahorra tiempo, evita errores o mejora una decisión, no parte como prioridad. A veces el primer paso es ordenar, no automatizar.
               </p>
             </div>
           </SectionHeader>

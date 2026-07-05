@@ -6,9 +6,9 @@ export default function CommercialModels() {
   return (
     <section id="modelos" className="border-y border-white/10 bg-white/[0.025] py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionHeader eyebrow="Formas de trabajo" title="Distintas formas de partir, según el tamaño del problema." align="center">
+        <SectionHeader eyebrow="Formas de trabajo" title="Distintas maneras de empezar, según lo que ya está pasando." align="center">
           <p>
-            No todos necesitan lo mismo. Algunos requieren solo ordenar una idea; otros ya necesitan un MVP, mantención o un sistema más completo.
+            No todos llegan con el mismo problema ni con la misma urgencia. Algunas personas necesitan ordenar el proceso; otras necesitan una primera herramienta útil, una recuperación o una continuidad más seria.
           </p>
         </SectionHeader>
 
@@ -33,9 +33,9 @@ export default function CommercialModels() {
         </div>
 
         <div className="mt-8 rounded-[2rem] border border-cyan-300/20 bg-cyan-300/10 p-6 text-center">
-          <p className="text-lg font-black text-white">La idea es partir con una escala razonable.</p>
+          <p className="text-lg font-black text-white">El primer paso suele ser diagnóstico.</p>
           <p className="mt-2 text-slate-300">
-            Primero demostramos valor. Después se decide si conviene seguir creciendo.
+            A partir de ahí se define si conviene ordenar el proceso, construir un MVP, recuperar algo existente o sostenerlo con continuidad.
           </p>
         </div>
       </div>

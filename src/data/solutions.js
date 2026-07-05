@@ -161,39 +161,39 @@ export const processSteps = [
 
 export const serviceModels = [
   {
-    name: 'Diagnóstico Digital',
-    tag: 'Para partir bien',
+    name: 'Diagnóstico inicial',
+    tag: 'Primer paso',
     description:
-      'Una conversación guiada para entender el problema, ordenar prioridades y decidir si vale la pena construir una solución.',
-    deliverables: ['Reunión inicial', 'Mapa del proceso', 'Propuesta clara', 'Prioridades del MVP'],
+      'Una conversación guiada para entender el problema, ordenar prioridades y decidir si vale la pena trabajar sobre el proceso o construir algo más concreto.',
+    deliverables: ['Reunión inicial', 'Mapa del proceso', 'Prioridades reales', 'Siguiente paso claro'],
   },
   {
-    name: 'Sistema MVP',
-    tag: 'Primera versión usable',
+    name: 'Ordenamiento de proceso',
+    tag: 'Antes de automatizar',
     description:
-      'Una versión pequeña pero funcional, pensada para probar el flujo principal y empezar a generar valor rápido.',
-    deliverables: ['Diseño funcional', 'Desarrollo inicial', 'Pruebas reales', 'Deploy y capacitación'],
+      'Cuando el problema es más de claridad que de tecnología. Se ordena el flujo, se separan datos y se define qué debería cambiar primero.',
+    deliverables: ['Flujo claro', 'Definición de etapas', 'Menos improvisación', 'Base para decidir'],
   },
   {
-    name: 'Sistema Operacional',
-    tag: 'Más estructura',
+    name: 'MVP funcional',
+    tag: 'Primera herramienta útil',
     description:
-      'Para operaciones que ya necesitan roles, módulos, reportes y control por áreas.',
-    deliverables: ['Módulos por área', 'Reportes', 'Permisos', 'Soporte y mejoras'],
+      'Una versión pequeña pero útil para resolver el núcleo del problema y probarla con uso real.',
+    deliverables: ['Diseño funcional', 'Desarrollo inicial', 'Pruebas reales', 'Primer valor operativo'],
   },
   {
-    name: 'Mantención Crohnoz',
+    name: 'Recuperación y continuidad',
+    tag: 'Cuando algo ya no está bien',
+    description:
+      'Para sistemas caídos, bases en mal estado, procesos sin respaldo o herramientas que se volvieron frágiles.',
+    deliverables: ['Revisión técnica', 'Base de datos limpia', 'Respaldo y recuperación', 'Plan de continuidad'],
+  },
+  {
+    name: 'Mantenimiento y soporte',
     tag: 'Acompañamiento',
     description:
-      'Soporte mensual para que el sistema siga funcionando, se respalde y evolucione con el negocio.',
-    deliverables: ['Soporte remoto', 'Backups', 'Monitoreo', 'Mejoras progresivas'],
-  },
-  {
-    name: 'Infraestructura administrada',
-    tag: 'Continuidad',
-    description:
-      'Alojamiento, base de datos, respaldos y monitoreo para proyectos que ya no pueden depender de servicios gratuitos o temporales.',
-    deliverables: ['Base por cliente', 'Variables protegidas', 'Backup programado', 'Ruta de recuperación'],
+      'Para que el sistema siga funcionando, la información siga ordenada y los cambios no se vuelvan improvisados.',
+    deliverables: ['Soporte continuo', 'Backups', 'Mejoras progresivas', 'Seguimiento real'],
   },
 ];
 

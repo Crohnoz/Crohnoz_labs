@@ -7,7 +7,7 @@ export default function Solutions() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader eyebrow="Soluciones Crohnoz" title="Qué se puede pedir y por dónde empezar." align="center">
           <p>
-            No hace falta tener la solución clara desde el inicio. Podemos partir con un diagnóstico, definir el alcance y construir una primera herramienta útil para el problema real.
+            No hace falta tener la solución cerrada desde el inicio. Podemos partir con un diagnóstico, ordenar el proceso y construir una primera herramienta útil para el problema real.
           </p>
         </SectionHeader>
 
@@ -27,9 +27,9 @@ export default function Solutions() {
         </div>
 
         <div className="mt-10 rounded-[1.75rem] border border-cyan-300/15 bg-cyan-300/[0.06] p-6 text-center md:p-8">
-          <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">Lo que suele contratarse</p>
-          <p className="mt-3 text-xl font-black text-white">Diagnóstico, sistema MVP, automatización, infraestructura o continuidad.</p>
-          <p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate-300">La idea es empezar donde el problema es más claro y crecer con el negocio, sin abrir un proyecto grande si lo que hace falta es ordenar una parte concreta del día a día.</p>
+          <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">Lo que suele empezar</p>
+          <p className="mt-3 text-xl font-black text-white">Diagnóstico inicial, ordenamiento del proceso, MVP funcional, recuperación o continuidad.</p>
+          <p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate-300">A veces el primer paso es entender el problema y dejarlo en orden. Otras, se necesita una herramienta concreta para sostener una operación que ya está creciendo.</p>
         </div>
 
         <div className="mt-10 grid gap-4 md:grid-cols-4">

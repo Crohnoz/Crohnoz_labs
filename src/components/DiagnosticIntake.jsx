@@ -16,7 +16,7 @@ export default function DiagnosticIntake() {
           <div className="lab-panel mt-8 p-6">
             <p className="font-black text-white">Qué debería salir de esa conversación</p>
             <p className="mt-3 leading-7 text-slate-300">
-              Un mapa simple del problema, cómo se resuelve hoy, qué datos maneja, qué se repite y cuál podría ser el primer paso más realista.
+              Un mapa simple del problema, cómo se resuelve hoy, qué datos maneja, qué se repite y qué forma de solución tendría más sentido empezar.
             </p>
           </div>
         </div>
