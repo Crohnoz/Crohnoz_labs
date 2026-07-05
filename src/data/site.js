@@ -1,7 +1,7 @@
 export const site = {
   name: 'Crohnoz Labs',
   legalName: 'Crohnoz Labs',
-  tagline: 'Sistemas que hacen funcionar tu negocio.',
+  tagline: 'Sistemas y continuidad para operaciones reales.',
   description:
     'Taller digital de sistemas, automatización, bases de datos e infraestructura para operaciones reales.',
   primaryDomain: 'crohnozlabs.cl',
