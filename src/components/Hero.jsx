@@ -29,23 +29,23 @@ export default function Hero() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
-            Si tu negocio ya funciona, pero cada avance trae más planillas, chats, cuentas pendientes y trabajo repetido, podemos ayudarte a ordenarlo en un sistema simple, útil y mantenible.
+            Crohnoz Labs transforma problemas operativos en sistemas simples, útiles y mantenibles. Ayudamos a negocios reales a ordenar procesos, automatizar tareas y sostener herramientas que realmente sirven.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-2 text-sm font-bold text-slate-300">
-            <span className="accent-chip">Administración</span>
+            <span className="accent-chip">Sistemas administrativos</span>
             <span className="accent-chip">Automatización</span>
-            <span className="accent-chip">Infraestructura</span>
-            <span className="accent-chip">Soporte real</span>
+            <span className="accent-chip">Base de datos</span>
+            <span className="accent-chip">Recuperación y continuidad</span>
           </div>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a href="#contacto" className="button-primary w-full justify-center sm:w-auto">
-              Hablemos de tu operación
+              Pedir diagnóstico inicial
               <ArrowRight size={19} />
             </a>
             <a href="/proyectos" className="button-secondary w-full justify-center sm:w-auto">
-              Ver proyectos
+              Ver cómo trabajamos
             </a>
           </div>
 
@@ -75,7 +75,7 @@ export default function Hero() {
                 <p className="font-mono text-sm text-mintlab">&gt; cronhoz --ordenar operacion</p>
                 <p className="mt-3 text-2xl font-black text-white">No todo necesita un sistema enorme.</p>
                 <p className="mt-2 leading-7 text-slate-300">
-                  A veces basta con escuchar bien, ordenar el flujo y construir la primera herramienta correcta.
+                  A veces basta con escuchar bien, ordenar el flujo y construir la primera herramienta correcta para resolver el problema real.
                 </p>
               </div>
 

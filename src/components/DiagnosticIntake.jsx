@@ -7,7 +7,7 @@ export default function DiagnosticIntake() {
     <section id="diagnostico" className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
       <div className="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
         <div>
-          <SectionHeader eyebrow="Diagnóstico inicial" title="Partimos conversando, no cotizando a ciegas.">
+          <SectionHeader eyebrow="Diagnóstico inicial" title="Partimos conversando, no a ciegas.">
             <p>
               No necesitas llegar con un documento perfecto. Puedes llegar con una molestia, una idea a medias o un proceso que ya no está dando abasto.
             </p>
@@ -16,7 +16,7 @@ export default function DiagnosticIntake() {
           <div className="lab-panel mt-8 p-6">
             <p className="font-black text-white">Qué debería salir de esa conversación</p>
             <p className="mt-3 leading-7 text-slate-300">
-              Un mapa simple: problema, flujo actual, primera solución posible, riesgos, tecnología necesaria y próximos pasos.
+              Un mapa simple del problema, cómo se resuelve hoy, qué datos maneja, qué se repite y cuál podría ser el primer paso más realista.
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function DiagnosticIntake() {
             href="#contacto"
             className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-4 font-black text-ink transition hover:-translate-y-1 hover:bg-cyan-200"
           >
-            Quiero revisar mi caso
+            Contar mi problema
             <Send size={18} />
           </a>
         </div>

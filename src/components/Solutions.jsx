@@ -5,9 +5,9 @@ export default function Solutions() {
   return (
     <section id="soluciones" className="border-y border-white/10 bg-white/[0.025] py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionHeader eyebrow="Soluciones Crohnoz" title="Herramientas concretas para simplificar lo que ya funciona." align="center">
+        <SectionHeader eyebrow="Soluciones Crohnoz" title="Qué se puede pedir y por dónde empezar." align="center">
           <p>
-            Nos metemos en la forma real de trabajar para convertir procesos dispersos en pasos claros, medibles y sostenibles.
+            No hace falta tener la solución clara desde el inicio. Podemos partir con un diagnóstico, definir el alcance y construir una primera herramienta útil para el problema real.
           </p>
         </SectionHeader>
 
@@ -24,6 +24,12 @@ export default function Solutions() {
               </article>
             );
           })}
+        </div>
+
+        <div className="mt-10 rounded-[1.75rem] border border-cyan-300/15 bg-cyan-300/[0.06] p-6 text-center md:p-8">
+          <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">Lo que suele contratarse</p>
+          <p className="mt-3 text-xl font-black text-white">Diagnóstico, sistema MVP, automatización, infraestructura o continuidad.</p>
+          <p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate-300">La idea es empezar donde el problema es más claro y crecer con el negocio, sin abrir un proyecto grande si lo que hace falta es ordenar una parte concreta del día a día.</p>
         </div>
 
         <div className="mt-10 grid gap-4 md:grid-cols-4">

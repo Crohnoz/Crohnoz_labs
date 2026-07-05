@@ -8,7 +8,7 @@ export default function QuickNavigation() {
         <div className="flex flex-col gap-3 border-b border-white/10 pb-4 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.24em] text-cyan-200">Lectura rápida</p>
-            <p className="mt-1 text-sm text-slate-400">La portada muestra lo esencial. Si quieres mirar más a fondo, cada tema tiene su propio espacio.</p>
+            <p className="mt-1 text-sm text-slate-400">La portada muestra lo esencial. Si quieres entender mejor cómo trabajar con Crohnoz Labs, cada tema tiene su espacio.</p>
           </div>
           <a href="/proyectos" className="inline-flex items-center gap-2 text-sm font-black text-cyan-100 transition hover:text-cyan-200">
             Explorar proyectos

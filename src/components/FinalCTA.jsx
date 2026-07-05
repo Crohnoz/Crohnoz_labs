@@ -14,7 +14,7 @@ export default function FinalCTA() {
               ¿Hay un proceso que ya pide orden?
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-              Puede ser una agenda, una cobranza, un inventario, un pedido, un reporte o simplemente un proceso que ya se volvió difícil de seguir. Partamos conversando y veamos qué solución tiene sentido.
+              Si hoy tu negocio funciona con planillas, WhatsApp y memoria, podemos ordenar el proceso y convertirlo en un sistema simple, útil y mantenible.
             </p>
             <div className="mt-7 grid gap-3 text-sm font-semibold text-slate-200 sm:grid-cols-3">
               <span className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">1. Problema</span>
@@ -24,7 +24,7 @@ export default function FinalCTA() {
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-ink/70 p-6 backdrop-blur-xl">
-            <p className="text-xl font-black text-white">Agendemos un primer diagnóstico</p>
+            <p className="text-xl font-black text-white">Pedir diagnóstico inicial</p>
             <p className="mt-3 leading-7 text-slate-300">
               Una primera conversación para entender qué está pasando, qué se puede mejorar y cuál sería el primer paso más realista.
             </p>
