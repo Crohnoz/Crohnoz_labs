@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, Cpu, Database, GitBranch, ShieldCheck, Sparkles, TerminalSquare, Workflow } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Cpu, Database, GitBranch, ShieldCheck, TerminalSquare, Workflow } from 'lucide-react';
 import { brand } from '../data/brand.js';
 import { featuredMetrics } from '../data/projects.js';
 import BrandMark from './BrandMark.jsx';
@@ -67,7 +67,7 @@ export default function Hero() {
               <span className="h-3 w-3 rounded-full bg-red-400" />
               <span className="h-3 w-3 rounded-full bg-yellow-300" />
               <span className="h-3 w-3 rounded-full bg-mintlab" />
-              <span className="ml-3 font-mono text-xs text-slate-400">cronhoz@labs:~/operacion</span>
+              <span className="ml-3 font-mono text-xs text-slate-400">crohnoz@labs:~/operacion</span>
             </div>
 
             <div className="relative space-y-4">
