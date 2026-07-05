@@ -73,7 +73,7 @@ export default function Hero() {
             <div className="relative space-y-4">
               <div className="rounded-3xl border border-mintlab/20 bg-black/25 p-5">
                 <p className="font-mono text-sm text-mintlab">&gt; cronhoz --ordenar operacion</p>
-                <p className="mt-3 text-2xl font-black text-white">No todo necesita un sistema enorme.</p>
+                <p className="mt-3 text-2xl font-black text-white">A veces no hace falta empezar grande.</p>
                 <p className="mt-2 leading-7 text-slate-300">
                   A veces basta con escuchar bien, ordenar el flujo y construir la primera herramienta correcta para resolver el problema real.
                 </p>
@@ -109,7 +109,7 @@ export default function Hero() {
                 <span>Primero la operación. Después la tecnología.</span>
               </div>
               <p className="mt-3 leading-7 text-slate-300">
-                Así evitamos construir de más y enfocamos el presupuesto donde realmente mueve la aguja.
+                Así evitamos construir de más y enfocamos el esfuerzo donde realmente mueve la aguja.
               </p>
             </div>
           </div>

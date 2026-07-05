@@ -11,7 +11,7 @@ export default function Footer() {
           <p className="text-lg font-black text-white">{site.name}</p>
           <p className="mt-1 text-sm text-slate-400">Laboratorio de soluciones digitales · {site.primaryDomain}</p>
           <p className="mt-4 max-w-md text-sm leading-6 text-slate-500">
-            Sistemas administrativos, automatización, infraestructura práctica y reutilización tecnológica para negocios reales.
+            Sistemas administrativos, automatización, infraestructura práctica y continuidad para negocios reales.
           </p>
         </div>
         <div>

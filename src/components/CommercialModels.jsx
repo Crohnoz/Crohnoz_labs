@@ -35,7 +35,7 @@ export default function CommercialModels() {
         <div className="mt-8 rounded-[2rem] border border-cyan-300/20 bg-cyan-300/10 p-6 text-center">
           <p className="text-lg font-black text-white">El primer paso suele ser diagnóstico.</p>
           <p className="mt-2 text-slate-300">
-            A partir de ahí se define si conviene ordenar el proceso, construir un MVP, recuperar algo existente o sostenerlo con continuidad.
+            A partir de ahí se define si conviene ordenar el proceso, construir una primera herramienta, recuperar algo existente o sostenerlo con continuidad.
           </p>
         </div>
       </div>

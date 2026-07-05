@@ -8,7 +8,7 @@ export default function Method() {
         <div className="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
           <SectionHeader eyebrow="Método de trabajo" title="Antes de construir, entendemos cómo trabaja el negocio.">
             <p>
-              El objetivo no es llenar todo de software. Es resolver primero lo que más duele, probarlo con uso real y hacerlo crecer cuando tenga sentido.
+              El objetivo no es llenar todo de software. Es resolver primero lo que más duele, probarlo con uso real y hacer crecer lo que realmente aporta.
             </p>
             <div className="mt-6 rounded-3xl border border-cyan-300/20 bg-cyan-300/10 p-5">
               <p className="text-base font-black text-white">Primero diagnóstico, después decisión</p>

@@ -204,6 +204,7 @@ export const diagnosticChecklist = [
   'Quiénes usan el proceso y qué permisos necesitarían',
   'Qué equipos disponibles podrían aprovecharse',
   'Qué primera versión daría valor sin hacerlo enorme',
+  'Si el problema requiere orden, recuperación o continuidad',
 ];
 
 export const faqItems = [

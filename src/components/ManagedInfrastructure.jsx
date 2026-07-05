@@ -19,7 +19,7 @@ export default function ManagedInfrastructure() {
         <div className="lg:sticky lg:top-28">
           <SectionHeader eyebrow="Continuidad operativa" title="No basta con construir el sistema. También hay que mantenerlo vivo.">
             <p>
-              La experiencia con FDR dejó una lección clara: una demo puede vivir en un entorno temporal, pero un sistema de cliente necesita base de datos, respaldo y una ruta de recuperación.
+              La experiencia con proyectos reales deja una lección clara: una demo puede vivir en un entorno temporal, pero un sistema de cliente necesita base de datos, respaldo y una ruta de recuperación.
             </p>
             <p className="mt-4">
               En Crohnoz Labs queremos que cada proyecto tenga una separación sana: demo pública con datos ficticios, sistema real privado y respaldo administrado según el nivel de uso.
@@ -32,7 +32,7 @@ export default function ManagedInfrastructure() {
               <p className="font-black">Base de datos administrada</p>
             </div>
             <p className="mt-3 leading-7 text-slate-300">
-              El cliente no debería preocuparse por vencimientos, credenciales sueltas o servicios gratuitos que dejan de funcionar. Eso tiene que quedar dentro del servicio técnico de Crohnoz.
+              El cliente no debería preocuparse por vencimientos, credenciales sueltas o servicios gratuitos que dejan de funcionar. Eso tiene que quedar dentro del servicio técnico de Crohnoz Labs.
             </p>
           </div>
         </div>

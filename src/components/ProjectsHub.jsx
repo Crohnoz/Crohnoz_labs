@@ -61,7 +61,7 @@ function ProjectsIndex() {
                 Vitrina técnica con <span className="text-gradient">repos, demos y rutas seguras.</span>
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-                Cada proyecto tiene una ficha pública. Las muestras se marcan según estén listas, en preparación o reservadas para uso interno.
+                Cada proyecto tiene una ficha pública. Las muestras se marcan según estén listas, en preparación o reservadas para uso interno, para no confundir el contexto con el sistema real.
               </p>
             </div>
             <div className="lab-panel p-6">
