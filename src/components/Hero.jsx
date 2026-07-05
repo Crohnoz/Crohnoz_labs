@@ -72,7 +72,7 @@ export default function Hero() {
 
             <div className="relative space-y-4">
               <div className="rounded-3xl border border-mintlab/20 bg-black/25 p-5">
-                <p className="font-mono text-sm text-mintlab">&gt; cronhoz --ordenar operacion</p>
+                <p className="font-mono text-sm text-mintlab">&gt; crohnoz --ordenar operacion</p>
                 <p className="mt-3 text-2xl font-black text-white">A veces no hace falta empezar grande.</p>
                 <p className="mt-2 leading-7 text-slate-300">
                   A veces basta con escuchar bien, ordenar el flujo y construir la primera herramienta correcta para resolver el problema real.

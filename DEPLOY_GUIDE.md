@@ -76,7 +76,7 @@ Dominio principal actualmente documentado:
 crohnozlabs.cl
 ```
 
-Si el dominio definitivo será `cronoslab.cl`, cambia primero:
+Si el dominio definitivo será `crohnozlabs.cl`, cambia primero:
 
 ```txt
 src/data/site.js

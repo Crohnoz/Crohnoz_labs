@@ -19,7 +19,7 @@ export default function LabInfrastructure() {
             <span className="h-3 w-3 rounded-full bg-red-400" />
             <span className="h-3 w-3 rounded-full bg-yellow-300" />
             <span className="h-3 w-3 rounded-full bg-mintlab" />
-            <span className="ml-3 font-mono text-xs text-slate-500">cronhoz-lab-status</span>
+            <span className="ml-3 font-mono text-xs text-slate-500">crohnoz-lab-status</span>
           </div>
 
           <div className="space-y-3 font-mono text-sm">

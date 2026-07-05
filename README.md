@@ -50,7 +50,7 @@ Dominio principal usado en el proyecto:
 crohnozlabs.cl
 ```
 
-También se dejó documentado `cronoslab.cl` como alias mencionado en conversación. La configuración visible del dominio está centralizada en:
+También se dejó documentado `crohnozlabs.cl` como alias mencionado en conversación. La configuración visible del dominio está centralizada en:
 
 ```txt
 src/data/site.js
@@ -165,7 +165,7 @@ src/data/solutions.js
 
 ## Pendientes recomendados
 
-1. Confirmar dominio final definitivo: `crohnozlabs.cl` o `cronoslab.cl`.
+1. Confirmar dominio final definitivo: `crohnozlabs.cl` o `crohnozlabs.cl`.
 2. Confirmar correo real o redirección para `contacto@crohnozlabs.cl`.
 3. Agregar capturas simuladas o mockups para cada muestra pública.
 4. Crear demos visuales más completas por proyecto sin usar datos reales.
