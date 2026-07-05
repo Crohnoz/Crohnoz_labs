@@ -17,16 +17,16 @@ export default function FinalCTA() {
               Si hoy tu negocio funciona con planillas, WhatsApp y memoria, podemos ordenar el proceso y convertirlo en un sistema simple, útil y mantenible.
             </p>
             <div className="mt-7 grid gap-3 text-sm font-semibold text-slate-200 sm:grid-cols-3">
-              <span className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">1. Problema</span>
-              <span className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">2. Diagnóstico</span>
-              <span className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">3. Sistema</span>
+              <span className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">1. Cuéntame el problema</span>
+              <span className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">2. Ordenamos el flujo</span>
+              <span className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">3. Definimos el primer paso</span>
             </div>
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-ink/70 p-6 backdrop-blur-xl">
             <p className="text-xl font-black text-white">Pedir diagnóstico inicial</p>
             <p className="mt-3 leading-7 text-slate-300">
-              Una primera conversación para entender qué está pasando, qué se puede mejorar y cuál sería el primer paso más realista.
+              Una primera conversación para entender qué está pasando, cómo se resuelve hoy y qué primer paso tiene más sentido construir.
             </p>
 
             <div className="mt-6 grid gap-3">
@@ -50,7 +50,7 @@ export default function FinalCTA() {
             </div>
 
             <p className="mt-5 text-xs leading-6 text-slate-500">
-              También puedes escribir directo al WhatsApp comercial: <strong className="text-slate-300">{contact.whatsappDisplay}</strong>.
+              Puedes escribir directo con el problema, el flujo actual y lo que te gustaría dejar de hacer manualmente: <strong className="text-slate-300">{contact.whatsappDisplay}</strong>.
             </p>
           </div>
         </div>
