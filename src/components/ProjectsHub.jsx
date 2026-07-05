@@ -209,7 +209,7 @@ function ProjectDetail({ project }) {
         <section className="lab-panel p-6 md:p-8">
           <div className="grid gap-8 lg:grid-cols-[1fr_.9fr] lg:items-center">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.22em] text-cyan-200">Demo pública / sistema privado</p>
+              <p className="text-sm font-black uppercase tracking-[0.22em] text-cyan-200">Ficha pública / sistema privado</p>
               <h2 className="mt-3 text-3xl font-black text-white md:text-5xl">La ficha es pública. La muestra solo se abre cuando es segura.</h2>
               <p className="mt-5 max-w-3xl leading-8 text-slate-300">
                 Esta estructura permite explicar el proyecto sin exponer bases de datos, permisos, paneles internos ni información de clientes.
