@@ -153,6 +153,11 @@ function ProjectDetail({ project }) {
               <InfoCard label="Ruta futura" value={project.futureUrl.replace('https://', '')} />
             </div>
 
+            <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-black/20 p-5">
+              <p className="text-[0.68rem] font-black uppercase tracking-[0.2em] text-slate-500">Para quién</p>
+              <p className="mt-2 text-sm leading-6 text-slate-300">{project.audience}</p>
+            </div>
+
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               <StatusStrip icon={Github} label="Código" value={project.repository?.status ?? 'Pendiente'} />
               <StatusStrip icon={Rocket} label="Publicación" value={project.deploy?.note ?? 'Demo segura dentro del sitio principal.'} />
@@ -181,10 +186,24 @@ function ProjectDetail({ project }) {
           </aside>
         </section>
 
-        <section className="grid gap-5 py-10 lg:grid-cols-3">
-          <ProjectPanel title="Impacto esperado" items={project.impact} />
+        <section className="grid gap-5 py-10 lg:grid-cols-2 xl:grid-cols-4">
+          <ProjectPanel title="Problema" items={[project.problem]} />
+          <ProjectPanel title="Solución" items={[project.solution]} />
           <ProjectPanel title="Módulos del sistema" items={project.modules} />
-          <ProjectPanel title="Muestra pública" items={project.demoBlueprint} />
+          <ProjectPanel title="Qué se puede mostrar" items={project.publicScope} />
+        </section>
+
+        <section className="grid gap-5 pb-10 lg:grid-cols-2">
+          <ProjectPanel title="Qué queda privado" items={project.privateScope} />
+          <ProjectPanel title="Qué está construido" items={project.whatIsBuilt} />
+        </section>
+
+        <section className="pb-10">
+          <div className="lab-panel p-6 md:p-8">
+            <p className="text-[0.68rem] font-black uppercase tracking-[0.24em] text-cyan-200">Próximo paso</p>
+            <h2 className="mt-3 text-2xl font-black text-white">{project.nextStep}</h2>
+            <p className="mt-3 text-sm leading-7 text-slate-300">{project.whatIsPending?.join(' · ')}</p>
+          </div>
         </section>
 
         <section className="lab-panel p-6 md:p-8">

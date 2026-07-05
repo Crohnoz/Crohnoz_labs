@@ -84,8 +84,8 @@ export default function ProjectDemoPage({ slug }) {
 
         <section className="grid gap-5 py-10 lg:grid-cols-3">
           <DemoPanel title="Qué mostraría esta muestra" items={project.demoBlueprint} />
-          <DemoPanel title="Impacto esperado" items={project.impact} />
-          <DemoPanel title="Módulos considerados" items={project.modules} />
+          <DemoPanel title="Qué está construido" items={project.whatIsBuilt ?? []} />
+          <DemoPanel title="Qué falta" items={project.whatIsPending ?? []} />
         </section>
 
         <section className="lab-panel p-6 md:p-8">
@@ -145,6 +145,10 @@ function DemoUnavailableState({ project }) {
           <h1 className="mt-4 text-5xl font-black tracking-[-0.055em] text-white md:text-7xl">{project.name}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">{intro}</p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300">{project.sampleNote}</p>
+          <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-black/20 p-5">
+            <p className="text-[0.68rem] font-black uppercase tracking-[0.2em] text-cyan-200">Próximo paso</p>
+            <p className="mt-2 text-base leading-7 text-slate-300">{project.nextStep}</p>
+          </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             <div className="rounded-[1.5rem] border border-white/10 bg-black/20 p-5">

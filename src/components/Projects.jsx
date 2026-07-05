@@ -42,6 +42,11 @@ export default function Projects() {
               <p className="mt-4 line-clamp-4 leading-7 text-slate-300">{project.summary}</p>
 
               <div className="mt-5 rounded-2xl border border-white/10 bg-black/20 p-4">
+                <p className="text-[0.68rem] font-black uppercase tracking-[0.22em] text-slate-500">Problema</p>
+                <p className="mt-2 text-sm leading-6 text-slate-300">{project.problem}</p>
+              </div>
+
+              <div className="mt-5 rounded-2xl border border-white/10 bg-black/20 p-4">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <p className="text-[0.68rem] font-black uppercase tracking-[0.22em] text-slate-500">Estado de muestra</p>
                   <span className={`rounded-full border px-3 py-1 text-[0.68rem] font-black uppercase tracking-[0.16em] ${project.sampleState === 'internal' ? 'border-amber-300/25 bg-amber-300/10 text-amber-100' : project.sampleState === 'available' ? 'border-emerald-300/25 bg-emerald-300/10 text-emerald-100' : 'border-slate-400/25 bg-slate-400/10 text-slate-200'}`}>
@@ -66,6 +71,11 @@ export default function Projects() {
                     {module}
                   </span>
                 ))}
+              </div>
+
+              <div className="mt-5 rounded-2xl border border-cyan-300/15 bg-cyan-300/[0.06] p-4">
+                <p className="text-[0.68rem] font-black uppercase tracking-[0.22em] text-cyan-200">Próximo paso</p>
+                <p className="mt-2 text-sm leading-6 text-slate-300">{project.nextStep}</p>
               </div>
 
               <div className="mt-6 border-t border-white/10 pt-5">
